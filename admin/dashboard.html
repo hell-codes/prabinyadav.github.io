@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+           <html>
+             <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Admin Dashboard</title>
+               <link rel="stylesheet" href="admin.css">
+           </head>
+
+      <body>
+
+              <div class="dashboard">
+
+           <h2>Project Manager</h2>
+
+               <input id="title" placeholder="Project Title">
+             <input id="desc" placeholder="Project Description">
+                     <input type="file" id="imgFile" accept="image/*">
+
+                        <button onclick="addProject()">Add Project</button>
+
+                   <h3>Projects</h3>
+            <div id="projectAdminList"></div>
+
+                 <button onclick="logout()">Logout</button>
+
+            </div>
+             <script>
+                   if(localStorage.getItem("adminLoggedIn") !== "true"){
+                   alert("Access Denied");
+                   window.location.href = "login.html";
+                     }
+          </script>
+
+
+              <script src="admin.js"></script>
+       </body>
+</html>
