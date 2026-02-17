@@ -18,6 +18,7 @@ body {
     background: var(--bg);
     color: var(--text);
     transition:0.3s;
+    overflow-x: hidden;
 }
 
 
@@ -236,7 +237,7 @@ nav {
         right:-100%;
         width: 60%;
         max-width: 260px;
-        height: 100vh;
+        height: calc(100vh - 70vh);
         background:rgba(2,6,23,0.95);
         backdrop-filter: blur(10px);
         display:flex;
@@ -244,7 +245,8 @@ nav {
         align-items:center;
         padding-top:25px;
         transition:0.3s ease;
-        z-index:1000;
+        z-index:2000;
+        overflow-y: auto;
     }
 
     .nav-links a {
@@ -544,4 +546,5 @@ h2 {
 .hero .cursor {
     color: var(--hero-text);
 }
+
 
