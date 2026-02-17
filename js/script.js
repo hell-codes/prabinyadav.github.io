@@ -62,7 +62,7 @@ if (toggleBtn) {
     toggleBtn.onclick = () => {
         document.body.classList.toggle("light");
 
-        // Save theme
+        
         if (document.body.classList.contains("light")) {
             localStorage.setItem("theme", "light");
         } else {
@@ -177,18 +177,23 @@ document.addEventListener("DOMContentLoaded", () => {
     const navLinks = document.getElementById("navLinks");
 
     if (menuToggle && navLinks) {
+
         menuToggle.addEventListener("click", () => {
             navLinks.classList.toggle("active");
-            document.body.classList.toggle("menu-open");
         });
 
         navLinks.querySelectorAll("a").forEach(link => {
             link.addEventListener("click", () => {
                 navLinks.classList.remove("active");
-                document.body.classList.remove("menu-open");
             });
+        });
+
+        
+        window.addEventListener("resize", () => {
+            if (window.innerWidth > 768) {
+                navLinks.classList.remove("active");
+            }
         });
     }
 
 });
-
