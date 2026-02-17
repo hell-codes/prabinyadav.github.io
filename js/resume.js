@@ -65,6 +65,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 navLinks.classList.remove("active");
             });
         });
+
+        window.addEventListener("resize", () => {
+            if (window.innerWidth > 768) {
+                navLinks.classList.remove("active");
+            }
+        });
     }
 
     if (localStorage.getItem("theme") === "light") {
@@ -84,3 +90,4 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 });
+
