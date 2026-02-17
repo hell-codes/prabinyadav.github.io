@@ -259,7 +259,7 @@ nav {
     }
 
     .nav-links.active {
-        right:-100%;
+        right:0;
     }
 }
 
@@ -549,6 +549,7 @@ h2 {
 .hero .cursor {
     color: var(--hero-text);
 }
+
 
 
 
