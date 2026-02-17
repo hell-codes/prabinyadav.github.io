@@ -179,13 +179,16 @@ document.addEventListener("DOMContentLoaded", () => {
     if (menuToggle && navLinks) {
         menuToggle.addEventListener("click", () => {
             navLinks.classList.toggle("active");
+            document.body.classList.toggle("menu-open");
         });
 
         navLinks.querySelectorAll("a").forEach(link => {
             link.addEventListener("click", () => {
                 navLinks.classList.remove("active");
+                document.body.classList.remove("menu-open");
             });
         });
     }
 
 });
+
