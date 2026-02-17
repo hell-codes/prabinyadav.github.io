@@ -21,6 +21,9 @@ body {
     overflow-x: hidden;
 }
 
+body.menu-open {
+    overflow: hidden;
+}  
 
 #particles {
     position: fixed;
@@ -546,5 +549,6 @@ h2 {
 .hero .cursor {
     color: var(--hero-text);
 }
+
 
 
