@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const menuToggle = document.getElementById("menuToggle");
     const modeToggle = document.getElementById("modeToggle");
 
-    /* Mobile menu */
+    
     if (menuToggle && navLinks) {
         menuToggle.addEventListener("click", () => {
             navLinks.classList.toggle("active");
@@ -65,6 +65,12 @@ document.addEventListener("DOMContentLoaded", () => {
             link.addEventListener("click", () => {
                 navLinks.classList.remove("active");
             });
+        });
+
+        window.addEventListener("resize", () => {
+            if (window.innerWidth > 768) {
+                navLinks.classList.remove("active");
+            }
         });
     }
 
@@ -85,3 +91,4 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 });
+
