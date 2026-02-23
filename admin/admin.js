@@ -1,24 +1,4 @@
 
-const ADMIN_EMAIL = "prabin.yadav.0.0.18@gmail.com";
-const ADMIN_PASS = "adminpanelaccess18";
-
-const loginForm = document.getElementById("login-form");
-
-if (loginForm) {
-    loginForm.addEventListener("submit", function (e) {
-        e.preventDefault();
-
-        let email = document.getElementById("login-email").value;
-        let pass = document.getElementById("login-password").value;
-
-        if (email === ADMIN_EMAIL && pass === ADMIN_PASS) {
-            localStorage.setItem("adminLoggedIn", "true");
-            window.location.href = "dashboard.html";
-        } else {
-            alert("Access denied");
-        }
-    });
-}
 
 const adminList = document.getElementById("projectAdminList");
 if (adminList) loadProjects();
@@ -73,3 +53,4 @@ function logout() {
     localStorage.removeItem("adminLoggedIn");
     location.href = "login.html";
 }
+
