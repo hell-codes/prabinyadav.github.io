@@ -192,6 +192,7 @@ nav {
 .nav-links {
     display:flex;
     align-items:center;
+    gap: 2px;
 }
 
 .mode-toggle {
@@ -231,14 +232,14 @@ nav {
         font-size: 26px;
         cursor: pointer;
         color: var(--text);
-        z-index: 1001;
+        z-index: 1100;
     }
 
     .nav-links {
         position:fixed;
-        top:60px;
+        top: 0;
         right:-100%;
-        width: 60%;
+        width: 75%;
         max-width: 260px;
         height: 100vh;
         background:rgba(2,6,23,0.95);
@@ -246,9 +247,10 @@ nav {
         display:flex;
         flex-direction:column;
         align-items:center;
+        justify-content: start;
         padding-top:25px;
         transition: right 0.35s cubic-bezier(.77,0,.18,1);
-        z-index:1000;
+        z-index:1050;
         
     }
 
@@ -549,6 +551,7 @@ h2 {
 .hero .cursor {
     color: var(--hero-text);
 }
+
 
 
 
