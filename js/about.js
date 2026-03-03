@@ -88,7 +88,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 localStorage.setItem("theme", "dark");
             }
         });
+
+        menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+    document.body.classList.toggle("menu-open");
+});
     }
 
 });
+
 
