@@ -193,6 +193,7 @@ nav {
     display:flex;
     align-items:center;
     gap: 2px;
+    position: relative;
 }
 
 .mode-toggle {
@@ -227,6 +228,11 @@ nav {
 
 @media (max-width:768px) {
 
+    nav {
+    position: relative;
+    width: 100%;
+}
+    
     .menu-toggle {
         display:block;
         font-size: 26px;
@@ -248,10 +254,10 @@ nav {
         flex-direction:column;
         align-items:center;
         justify-content: start;
-        padding-top:25px;
+        padding-top:80px;
         transition: right 0.35s cubic-bezier(.77,0,.18,1);
-        z-index:1050;
-        
+        z-index:2000;
+        box-shadow: -5px 0 20px rgba(0,0,0,0.5);
     }
 
     .nav-links a {
@@ -551,6 +557,7 @@ h2 {
 .hero .cursor {
     color: var(--hero-text);
 }
+
 
 
 
