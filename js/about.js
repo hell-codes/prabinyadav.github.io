@@ -53,46 +53,66 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const navLinks = document.getElementById("navLinks");
     const menuToggle = document.getElementById("menuToggle");
+    const menuIcon = document.getElementById("menuIcon");
     const modeToggle = document.getElementById("modeToggle");
 
-    
-    if (menuToggle && navLinks) {
-        menuToggle.addEventListener("click", () => {
-            navLinks.classList.toggle("active");
-        });
+    if (!menuToggle || !navLinks) return;
 
-        navLinks.querySelectorAll("a").forEach(link => {
-            link.addEventListener("click", () => {
-                navLinks.classList.remove("active");
-            });
-        });
-
-        window.addEventListener("resize", () => {
-            if (window.innerWidth > 768) {
-                navLinks.classList.remove("active");
-            }
-        });
+    function openMenu(){
+        navLinks.classList.add("active");
+        if(menuIcon) menuIcon.textContent = "✖";
+        document.body.classList.add("menu-open");
     }
 
-    if (localStorage.getItem("theme") === "light") {
+    function closeMenu(){
+        navLinks.classList.remove("active");
+        if(menuIcon) menuIcon.textContent = "☰";
+        document.body.classList.remove("menu-open");
+    }
+
+    menuToggle.addEventListener("click",(e)=>{
+        e.stopPropagation();
+
+        if(navLinks.classList.contains("active")){
+            closeMenu();
+        } else {
+            openMenu();
+        }
+    });
+
+    
+    document.addEventListener("click",(e)=>{
+        if(!navLinks.contains(e.target) && !menuToggle.contains(e.target)){
+            closeMenu();
+        }
+    });
+
+    
+    navLinks.querySelectorAll("a").forEach(link=>{
+        link.addEventListener("click", closeMenu);
+    });
+
+    
+    window.addEventListener("resize", ()=>{
+        if(window.innerWidth > 768){
+            closeMenu();
+        }
+    });
+
+
+    if(localStorage.getItem("theme") === "light"){
         document.body.classList.add("light");
     }
 
-    if (modeToggle) {
-        modeToggle.addEventListener("click", () => {
+    if(modeToggle){
+        modeToggle.addEventListener("click", ()=>{
             document.body.classList.toggle("light");
 
-            if (document.body.classList.contains("light")) {
-                localStorage.setItem("theme", "light");
-            } else {
-                localStorage.setItem("theme", "dark");
-            }
+            localStorage.setItem(
+                "theme",
+                document.body.classList.contains("light") ? "light" : "dark"
+            );
         });
-
-       
     }
 
 });
-
-
-
