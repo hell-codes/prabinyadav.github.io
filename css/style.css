@@ -12,6 +12,12 @@
     --hero-text:#f8fafc;
 }
 
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     margin:0;
     font-family: Arial;
@@ -249,7 +255,7 @@ nav {
     .nav-links {
         position:fixed;
         top: 0;
-        right: -100%;
+        right: -120%;
         width: 60%;
         max-width: 260px;
         height: 100vh;
@@ -575,6 +581,7 @@ h2 {
 .hero .cursor {
     color: var(--hero-text);
 }
+
 
 
 
