@@ -260,8 +260,8 @@ nav {
         align-items:center;
         
         padding-top:80px;
-        transform: translateX(100%);
-        transition: transform 0.35s ease;
+        
+        transition: right 0.35s ease;
         z-index: 1500;
         box-shadow: -5px 0 20px rgba(0,0,0,0.5);
     }
@@ -273,7 +273,7 @@ nav {
     }
 
     .nav-links.active {
-        transform: translateX(0);
+        right: 0;
     }
 }
 
@@ -575,6 +575,7 @@ h2 {
 .hero .cursor {
     color: var(--hero-text);
 }
+
 
 
 
