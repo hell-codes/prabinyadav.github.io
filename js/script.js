@@ -1,212 +1,119 @@
-const text = "Student Developer & Problem Solver";
-let i = 0;
+const PHRASES = [
+  "Student Developer",
+  "Problem Solver",
+  "Frontend Builder",
+  "Python Enthusiast"
+];
+let pi = 0, ci = 0, deleting = false;
 
-function typing() {
-    const el = document.getElementById("typing");
-    if (!el) return;
-
-    if (i < text.length) {
-        el.innerHTML += text.charAt(i);
-        i++;
-        setTimeout(typing, 60);
-    }
+function typeLoop() {
+  const el = document.getElementById("typing");
+  if (!el) return;
+  const current = PHRASES[pi];
+  el.textContent = deleting ? current.slice(0, ci--) : current.slice(0, ci++);
+  if (!deleting && ci > current.length) { deleting = true; setTimeout(typeLoop, 1400); return; }
+  if (deleting && ci < 0) { deleting = false; pi = (pi + 1) % PHRASES.length; ci = 0; }
+  setTimeout(typeLoop, deleting ? 45 : 80);
 }
-typing();
+setTimeout(typeLoop, 800);
 
 
 const projectList = document.getElementById("projectList");
 
-let projects = JSON.parse(localStorage.getItem("projects")) || [
-    {
-        title:"To-Do App",
-        desc:"Task manager application",
-        img:"images/todo.png"
-    },
-    {
-        title:"Tic Tac Toe",
-        desc:"2-player game",
-        img:"images/tictactoe.png"
-    },
-    {
-        title:"Portfolio Website",
-        desc:"Personal portfolio website",
-        img:"images/portfolio.png"
-    }
+const defaultProjects = [
+  { title: "To-Do App",          
+    desc: "Task manager application",   
+    img: "images/todo.png" 
+  },
+
+  { title: "Tic Tac Toe",        
+    desc: "Interactive 2-player game",  
+    img: "images/tictactoe.png" 
+  },
+
+  { title: "Portfolio Website",  
+    desc: "Personal portfolio website", 
+    img: "images/portfolio.png" 
+  }
 ];
 
 if (projectList) {
-    projects.forEach(p => {
-        const card = document.createElement("div");
-        card.className = "card";
-
-        card.innerHTML = `
-            <img src="${p.img}">
-            <div style="padding:15px">
-                <h3>${p.title}</h3>
-                <p>${p.desc}</p>
-            </div>
-        `;
-
-        projectList.appendChild(card);
-    });
+  const projects = JSON.parse(localStorage.getItem("projects")) || defaultProjects;
+  projects.forEach((p, i) => {
+    const card = document.createElement("div");
+    card.className = "card reveal";
+    card.style.transitionDelay = (i * 90) + "ms";
+    card.innerHTML = `
+      <div class="card-img">
+        <img src="${p.img}" alt="${p.title}" loading="lazy">
+      </div>
+      
+      <div class="card-body">
+        <h3>${p.title}</h3>
+        <p>${p.desc}</p>
+      </div>`;
+    projectList.appendChild(card);
+  });
+  
+  document.dispatchEvent(new Event("cardsReady"));
 }
-
-
-if (localStorage.getItem("theme") === "light") {
-    document.body.classList.add("light");
-}
-
-const toggleBtn = document.getElementById("modeToggle");
-
-if (toggleBtn) {
-    toggleBtn.onclick = () => {
-        document.body.classList.toggle("light");
-
-        
-        if (document.body.classList.contains("light")) {
-            localStorage.setItem("theme", "light");
-        } else {
-            localStorage.setItem("theme", "dark");
-        }
-    };
-}
-
-
-const navLinksContainer = document.getElementById("navLinks");
-
-if (navLinksContainer) {
-    navLinksContainer.querySelectorAll("a").forEach(link => {
-        link.addEventListener("click", () => {
-            navLinksContainer.classList.remove("active");
-        });
-    });
-}
-
-
-window.addEventListener("scroll", () => {
-    const header = document.querySelector("header");
-    if (!header) return;
-
-    if (window.scrollY > 50) {
-        header.classList.add("scrolled");
-    } else {
-        header.classList.remove("scrolled");
-    }
-});
 
 
 const canvas = document.getElementById("particles");
-
 if (canvas) {
+  const ctx = canvas.getContext("2d");
+  initCanvasResize(canvas);
 
-    const ctx = canvas.getContext("2d");
+  const N = 90;
+  const pts = Array.from({length: N}, () => ({
+    x: Math.random() * canvas.width,
+    y: Math.random() * canvas.height,
+    vx: (Math.random() - .5) * .7,
+    vy: (Math.random() - .5) * .7,
+    r: Math.random() * 1.5 + .5
+  }));
 
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+  function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    pts.forEach((p, i) => {
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+      ctx.fillStyle = "rgba(96,165,250,0.55)";
+      ctx.fill();
 
-    let particles = [];
+      p.x += p.vx; p.y += p.vy;
+      if (p.x < 0 || p.x > canvas.width)  p.vx *= -1;
+      if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
 
-    for (let i = 0; i < 80; i++) {
-        particles.push({
-            x: Math.random() * canvas.width,
-            y: Math.random() * canvas.height,
-            vx: Math.random() - 0.5,
-            vy: Math.random() - 0.5,
-            size: 2
-        });
-    }
-
-    function drawParticles() {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-        particles.forEach(p => {
-            ctx.beginPath();
-            ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-            ctx.fillStyle = "white";
-            ctx.fill();
-
-            p.x += p.vx;
-            p.y += p.vy;
-
-            if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
-            if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
-        });
-
-        requestAnimationFrame(drawParticles);
-    }
-
-    drawParticles();
-
-    window.addEventListener("resize", () => {
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
+      for (let j = i+1; j < pts.length; j++) {
+        const q = pts[j], dx = p.x-q.x, dy = p.y-q.y;
+        const d = Math.sqrt(dx*dx+dy*dy);
+        if (d < 130) {
+          ctx.strokeStyle = `rgba(96,165,250,${.18*(1-d/130)})`;
+          ctx.lineWidth = .8;
+          ctx.beginPath();
+          ctx.moveTo(p.x,p.y); ctx.lineTo(q.x,q.y);
+          ctx.stroke();
+        }
+      }
     });
+    requestAnimationFrame(draw);
+  }
+  draw();
 }
 
 
-document.addEventListener("DOMContentLoaded", function () {
-
-    const contactForm = document.getElementById("contactForm");
-
-    if (!contactForm) return;
-
-    contactForm.addEventListener("submit", function(e) {
-        e.preventDefault();
-
-        const name = document.getElementById("name").value;
-        const email = document.getElementById("email").value;
-        const message = document.getElementById("message").value;
-
-        const body =
-            "Name: " + name + "%0A" +
-            "Email: " + email + "%0A%0A" +
-            message;
-
-        window.open(
-            "https://mail.google.com/mail/?view=cm&fs=1&to=prabin.yadav.0.0.18@gmail.com&su=Portfolio Contact&body=" + body,
-            "_blank"
-        );
-    });
-
-});
-
-
 document.addEventListener("DOMContentLoaded", () => {
-
-    const menuToggle = document.getElementById("menuToggle");
-    const navLinks = document.getElementById("navLinks");
-    const menuIcon = document.getElementById("menuIcon");
-
-    if (!menuToggle || !navLinks) return;
-
-    function openMenu(){
-        navLinks.classList.add("active");
-        menuIcon.textContent = "✖";
-        document.body.classList.add("menu-open");
-    }
-
-    function closeMenu(){
-        navLinks.classList.remove("active");
-        menuIcon.textContent = "☰";
-        document.body.classList.remove("menu-open");
-    }
-
-    menuToggle.addEventListener("click",(e)=>{
-        e.stopPropagation();
-
-        if(navLinks.classList.contains("active")){
-            closeMenu();
-        }else{
-            openMenu();
-        }
-    });
-
-    document.addEventListener("click",(e)=>{
-        if(!navLinks.contains(e.target) && !menuToggle.contains(e.target)){
-            closeMenu();
-        }
-    });
-
+  const form = document.getElementById("contactForm");
+  if (!form) return;
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+    const n = document.getElementById("name").value;
+    const em = document.getElementById("email").value;
+    const m = document.getElementById("message").value;
+    window.open(
+      `https://mail.google.com/mail/?view=cm&fs=1&to=prabin.yadav.0.0.18@gmail.com&su=Portfolio Contact&body=Name: ${n}%0AEmail: ${em}%0A%0A${m}`,
+      "_blank"
+    );
+  });
 });
-
-
