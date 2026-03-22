@@ -1,92 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Services | Prabin Yadav</title>
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | Prabin Yadav</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
 <canvas id="servicesCanvas"></canvas>
 
 <header>
-    <h1 class="logo">
-       <img src="images/logo.png" alt="Prabin Logo">
-    </h1>
-
-
-    <nav>
-    <div class="menu-toggle" id="menuToggle">
-                <span id="menuIcon">☰</span>
-            </div>
-
+  <div class="logo">
+    <img src="images/logo.png" alt="Prabin Yadav">
+  </div>
+  <nav>
     <div class="nav-links" id="navLinks">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="services.html">Services</a>
-        <a href="resume.html">Resume</a>
-        <a href="contact.html">Contacts</a>
-        <a href="admin/login.html">Admin</a>
-        <div id="modeToggle" class="mode-toggle">
-        <div class="toggle-circle"></div>
-        </div>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="services.html">Services</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+      <a href="admin/login.html">Admin</a>
+      <div id="modeToggle" class="mode-toggle"><div class="toggle-circle"></div></div>
     </div>
-</nav>
-
+    <div class="menu-toggle" id="menuToggle"><span id="menuIcon">☰</span></div>
+  </nav>
 </header>
 
-<section class="glass fadeUp">
-    <h2>Services</h2>
+<div class="page-heading reveal">
+  
+  <h2 class="section-title">What I Offer</h2>
+</div>
+
+<section class="glass reveal">
+  <h2>Services</h2>
+  <p>
+    I provide development services focused on creating modern,
+    responsive, and efficient software and web solutions.
+  </p>
+</section>
+
+<div class="services-grid">
+  <div class="service-card reveal stagger-1">
+    <span class="service-icon">🌐</span>
+    <h3>Website Development</h3>
     <p>
-        I provide development services focused on creating modern,
-        responsive, and efficient software and web solutions.
+      Responsive websites using modern HTML, CSS,
+      and JavaScript with clean UI design.
     </p>
-</section>
+  </div>
 
-<section class="cards">
+  <div class="service-card reveal stagger-2">
+    <span class="service-icon">⚙️</span>
+    <h3>Software Applications</h3>
+    <p>
+      Development of practical applications using
+      Python and Java for solving real-world problems.
+    </p>
+  </div>
 
-    <div class="card fadeUp">
-        <div style="padding:20px">
-            <h3>Website Development</h3>
-            <p>
-                Responsive websites using modern HTML, CSS,
-                and JavaScript with clean UI design.
-            </p>
-        </div>
-    </div>
-
-    <div class="card fadeUp">
-        <div style="padding:20px">
-            <h3>Software Applications</h3>
-            <p>
-                Development of practical applications using
-                Python and Java for solving real-world problems.
-            </p>
-        </div>
-    </div>
-
-    <div class="card fadeUp">
-        <div style="padding:20px">
-            <h3>Frontend UI Development</h3>
-            <p>
-                Building interactive and visually appealing
-                user interfaces for modern web projects.
-            </p>
-        </div>
-    </div>
-
-</section>
+  <div class="service-card reveal stagger-3">
+    <span class="service-icon">🎨</span>
+    <h3>Frontend UI Development</h3>
+    <p>
+      Building interactive and visually appealing
+      user interfaces for modern web projects.
+    </p>
+  </div>
+</div>
 
 <footer>
-    <p>© 2026 Prabin Yadav. All rights reserved.</p>
+  <div class="footer-inner">
+    <span class="footer-copy">© 2026 Prabin Yadav. All rights reserved.</span>
+    <div class="footer-links">
+      <a href="contact.html">Hire Me</a>
+    </div>
+  </div>
 </footer>
 
+<script src="js/nav.js"></script>
 <script src="js/services.js"></script>
-
 </body>
 </html>
-
-
