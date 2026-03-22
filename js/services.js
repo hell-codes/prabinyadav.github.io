@@ -1,124 +1,25 @@
-const canvas = document.getElementById("servicesCanvas");
+const c = document.getElementById("servicesCanvas");
+if (c) {
+  const x = c.getContext("2d");
+  initCanvasResize(c);
+  const orbs = Array.from({length:18}, () => ({
+    x:Math.random()*c.width, y:Math.random()*c.height,
+    r:Math.random()*90+30, dx:(Math.random()-.5)*.5, dy:(Math.random()-.5)*.5,
+    h: Math.random()>0.5 ? 210 : 160
+  }));
 
-if (canvas) {
-    const ctx = canvas.getContext("2d");
-
-    function resize() {
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-    }
-
-    resize();
-
-    let circles = [];
-
-    for (let i = 0; i < 25; i++) {
-        circles.push({
-            x: Math.random() * canvas.width,
-            y: Math.random() * canvas.height,
-            r: Math.random() * 60 + 20,
-            dx: Math.random() * 0.5,
-            dy: Math.random() * 0.5
-        });
-    }
-
-    function animate() {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-        circles.forEach(c => {
-            let gradient = ctx.createRadialGradient(
-                c.x, c.y, 10,
-                c.x, c.y, c.r
-            );
-
-            gradient.addColorStop(0, "rgba(37,99,235,0.4)");
-            gradient.addColorStop(1, "transparent");
-
-            ctx.fillStyle = gradient;
-            ctx.beginPath();
-            ctx.arc(c.x, c.y, c.r, 0, Math.PI * 2);
-            ctx.fill();
-
-            c.x += c.dx;
-            c.y += c.dy;
-
-            if (c.x > canvas.width || c.x < 0) c.dx *= -1;
-            if (c.y > canvas.height || c.y < 0) c.dy *= -1;
-        });
-
-        requestAnimationFrame(animate);
-    }
-
-    animate();
-    window.addEventListener("resize", resize);
+  (function draw() {
+    x.clearRect(0,0,c.width,c.height);
+    orbs.forEach(o => {
+      const g = x.createRadialGradient(o.x,o.y,5,o.x,o.y,o.r);
+      g.addColorStop(0,`hsla(${o.h},80%,60%,0.22)`);
+      g.addColorStop(1,"transparent");
+      x.fillStyle=g; x.beginPath(); x.arc(o.x,o.y,o.r,0,Math.PI*2); x.fill();
+      o.x+=o.dx; o.y+=o.dy;
+      if(o.x<0||o.x>c.width) o.dx*=-1;
+      if(o.y<0||o.y>c.height) o.dy*=-1;
+    });
+    
+    requestAnimationFrame(draw);
+  })();
 }
-
-
-
-document.addEventListener("DOMContentLoaded", () => {
-
-    const navLinks = document.getElementById("navLinks");
-    const menuToggle = document.getElementById("menuToggle");
-    const menuIcon = document.getElementById("menuIcon");
-    const modeToggle = document.getElementById("modeToggle");
-
-    if (!menuToggle || !navLinks) return;
-
-    function openMenu() {
-        navLinks.classList.add("active");
-        if(menuIcon) menuIcon.textContent = "✖";
-        document.body.classList.add("menu-open");
-    }
-
-    function closeMenu() {
-        navLinks.classList.remove("active");
-        if(menuIcon) menuIcon.textContent = "☰";
-        document.body.classList.remove("menu-open");
-    }
-
-    menuToggle.addEventListener("click", (e) => {
-        e.stopPropagation();
-
-        if (navLinks.classList.contains("active")) {
-            closeMenu();
-        } else {
-            openMenu();
-        }
-    });
-
-
-    document.addEventListener("click", (e) => {
-        if (!navLinks.contains(e.target) && !menuToggle.contains(e.target)) {
-            closeMenu();
-        }
-    });
-
-    
-    navLinks.querySelectorAll("a").forEach(link => {
-        link.addEventListener("click", closeMenu);
-    });
-
-    
-    window.addEventListener("resize", () => {
-        if (window.innerWidth > 768) {
-            closeMenu();
-        }
-    });
-
-
-    if (localStorage.getItem("theme") === "light") {
-        document.body.classList.add("light");
-    }
-
-    if (modeToggle) {
-        modeToggle.addEventListener("click", () => {
-            document.body.classList.toggle("light");
-
-            localStorage.setItem(
-                "theme",
-                document.body.classList.contains("light") ? "light" : "dark"
-            );
-        });
-    }
-
-});
