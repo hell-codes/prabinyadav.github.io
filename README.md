@@ -48,6 +48,9 @@ Dark luxury tech aesthetic · Sticky navbar · Canvas animations · Admin dashbo
 prabinyadav-portfolio/
 │
 ├── 📁 admin/                    # Admin panel (Firebase auth)
+│   ├── 📁 assets/               # Admin page assets
+│   │   ├── bg-image.png         # Admin background image
+│   │   └── logo.png             # Admin panel logo
 │   ├── login.html               # Admin login page
 │   ├── dashboard.html           # Project manager dashboard
 │   ├── admin.js                 # Add / delete projects logic
