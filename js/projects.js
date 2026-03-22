@@ -1,171 +1,113 @@
 const canvas = document.getElementById("projectsCanvas");
-
 if (canvas) {
-    const ctx = canvas.getContext("2d");
+  const ctx = canvas.getContext("2d");
+  initCanvasResize(canvas);
 
-    function resizeCanvas(){
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
+  const HEX_SIZE = 38;
+  let offset = 0;
+
+  function hexPath(cx, cy, size) {
+    ctx.beginPath();
+    for (let i = 0; i < 6; i++) {
+      const angle = (Math.PI / 3) * i - Math.PI / 6;
+      const x = cx + size * Math.cos(angle);
+      const y = cy + size * Math.sin(angle);
+      i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
     }
+    ctx.closePath();
+  }
 
-    resizeCanvas();
+  function drawGrid() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    const cols = Math.ceil(canvas.width  / (HEX_SIZE * 1.75)) + 2;
+    const rows = Math.ceil(canvas.height / (HEX_SIZE * 1.52)) + 2;
 
-    let nodes = [];
+    for (let row = -1; row < rows; row++) {
+      for (let col = -1; col < cols; col++) {
+        const x = col * HEX_SIZE * 1.75;
+        const y = row * HEX_SIZE * 1.52 + (col % 2 === 0 ? 0 : HEX_SIZE * 0.76) + (offset % (HEX_SIZE * 1.52));
+        const dist = Math.hypot(x - canvas.width / 2, y - canvas.height / 2);
+        const pulse = 0.5 + 0.5 * Math.sin(dist * 0.008 - offset * 0.04);
+        const alpha = pulse * 0.12 + 0.02;
 
-    for(let i = 0; i < 60; i++){
-        nodes.push({
-            x: Math.random() * canvas.width,
-            y: Math.random() * canvas.height,
-            vx: Math.random() * 1 - 0.5,
-            vy: Math.random() * 1 - 0.5
-        });
+        hexPath(x, y, HEX_SIZE - 2);
+        ctx.strokeStyle = `rgba(20,184,166,${alpha})`;
+        ctx.lineWidth = 0.8;
+        ctx.stroke();
+
+        if (Math.sin(col * 7.3 + row * 4.1 + offset * 0.02) > 0.94) {
+          hexPath(x, y, HEX_SIZE - 2);
+          ctx.strokeStyle = "rgba(20,184,166,0.55)";
+          ctx.lineWidth = 1.2;
+          ctx.stroke();
+        }
+      }
     }
+    offset += 0.6;
+    requestAnimationFrame(drawGrid);
+  }
 
-    function animate(){
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-        nodes.forEach(n => {
-            ctx.beginPath();
-            ctx.arc(n.x, n.y, 2, 0, Math.PI * 2);
-            ctx.fillStyle = "white";
-            ctx.fill();
-
-            n.x += n.vx;
-            n.y += n.vy;
-
-            if(n.x < 0 || n.x > canvas.width) n.vx *= -1;
-            if(n.y < 0 || n.y > canvas.height) n.vy *= -1;
-
-            nodes.forEach(m => {
-                let dx = n.x - m.x;
-                let dy = n.y - m.y;
-                let dist = Math.sqrt(dx*dx + dy*dy);
-
-                if(dist < 120){
-                    ctx.strokeStyle = "rgba(37,99,235,0.2)";
-                    ctx.beginPath();
-                    ctx.moveTo(n.x, n.y);
-                    ctx.lineTo(m.x, m.y);
-                    ctx.stroke();
-                }
-            });
-        });
-
-        requestAnimationFrame(animate);
-    }
-
-    animate();
-    window.addEventListener("resize", resizeCanvas);
+  drawGrid();
 }
 
 
-
 document.addEventListener("DOMContentLoaded", () => {
+  const list = document.getElementById("projectList");
+  if (!list) return;
 
-    const projectList = document.getElementById("projectList");
+  const defaults = [
+    { title:"To-Do App",           
+      desc:"Task management app with add, complete & delete.",   
+      img:"images/todo.png"       
+    },
 
-    if (projectList) {
+    { title:"Tic Tac Toe",         
+      desc:"Interactive two-player game with win detection.",     
+      img:"images/tictactoe.png"  
+    },
 
-        let projects = JSON.parse(localStorage.getItem("projects")) || [
-            {
-                title:"To-Do App",
-                desc:"Task management web application.",
-                img:"images/todo.png"
-            },
-            {
-                title:"Tic Tac Toe",
-                desc:"Interactive two-player game.",
-                img:"images/tictactoe.png"
-            },
-            {
-                title:"Portfolio Website",
-                desc:"Personal portfolio website",
-                img:"images/portfolio.png"
-            },
-            {
-                title:"Death Clock-Hell Mode",
-                desc:"Predict your death date for fun.",
-                img:"images/deathclock.png"
-            }
-        ];
+    { title:"Portfolio Website",   
+      desc:"Personal portfolio showcasing skills and projects.",  
+      img:"images/portfolio.png"  
+    },
 
-        projects.forEach(p => {
-            const card = document.createElement("div");
-            card.className = "card";
-
-            card.innerHTML = `
-                <img src="${p.img}">
-                <div style="padding:15px">
-                    <h3>${p.title}</h3>
-                    <p>${p.desc}</p>
-                </div>
-            `;
-
-            projectList.appendChild(card);
-        });
+    { title:"Death Clock — Hell Mode", 
+      desc:"Predict your death date for fun.",               
+      img:"images/deathclock.png" 
     }
+  ];
 
+  const projects = JSON.parse(localStorage.getItem("projects")) || defaults;
 
-    const navLinks = document.getElementById("navLinks");
-    const menuToggle = document.getElementById("menuToggle");
-    const menuIcon = document.getElementById("menuIcon");
-    const modeToggle = document.getElementById("modeToggle");
+  projects.forEach((p, i) => {
+    const card = document.createElement("div");
+    card.className = "card";
+    card.style.cssText = `opacity:0; transform:translateY(28px);
+      transition: opacity .7s cubic-bezier(.16,1,.3,1) ${i*100}ms,
+                  transform .7s cubic-bezier(.16,1,.3,1) ${i*100}ms`;
 
-    if (!menuToggle || !navLinks) return;
+    card.innerHTML = `
+      <div class="card-img">
+        <img src="${p.img}" alt="${p.title}" loading="lazy">
+      </div>
+      
+      <div class="card-body">
+        <h3>${p.title}</h3>
+        <p>${p.desc}</p>
+      </div>`;
 
-    function openMenu(){
-        navLinks.classList.add("active");
-        if(menuIcon) menuIcon.textContent = "✖";
-        document.body.classList.add("menu-open");
-    }
+    list.appendChild(card);
+  });
 
-    function closeMenu(){
-        navLinks.classList.remove("active");
-        if(menuIcon) menuIcon.textContent = "☰";
-        document.body.classList.remove("menu-open");
-    }
-
-    menuToggle.addEventListener("click", (e)=>{
-        e.stopPropagation();
-
-        if(navLinks.classList.contains("active")){
-            closeMenu();
-        } else {
-            openMenu();
-        }
+ 
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      e.target.style.opacity = "1";
+      e.target.style.transform = "none";
+      obs.unobserve(e.target);
     });
+  }, { threshold: 0.08, rootMargin: "0px 0px -30px 0px" });
 
-    
-    document.addEventListener("click",(e)=>{
-        if(!navLinks.contains(e.target) && !menuToggle.contains(e.target)){
-            closeMenu();
-        }
-    });
-
-    
-    navLinks.querySelectorAll("a").forEach(link=>{
-        link.addEventListener("click", closeMenu);
-    });
-
-    window.addEventListener("resize", ()=>{
-        if(window.innerWidth > 768){
-            closeMenu();
-        }
-    });
-
-    if(localStorage.getItem("theme") === "light"){
-        document.body.classList.add("light");
-    }
-
-    if(modeToggle){
-        modeToggle.addEventListener("click", ()=>{
-            document.body.classList.toggle("light");
-
-            localStorage.setItem(
-                "theme",
-                document.body.classList.contains("light") ? "light" : "dark"
-            );
-        });
-    }
-
+  list.querySelectorAll(".card").forEach(c => obs.observe(c));
 });
