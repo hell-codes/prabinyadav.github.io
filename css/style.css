@@ -664,26 +664,7 @@ body.menu-open #menuToggle {
   background: rgba(96,165,250,.06);
 }
 
-.scroll-hint {
-  position: absolute;
-  bottom: 28px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 6px;
-  font-family: var(--font-display);
-  font-size: 9px;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--text-3);
-  animation: fadeSlideUp 1s .8s ease both;
-}
 
-.scroll-hint span { 
-  animation: scrollBounce 1.8s ease-in-out infinite; 
-}
 
 @keyframes scrollBounce {
   0%,100% { 
