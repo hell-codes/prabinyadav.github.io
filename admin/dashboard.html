@@ -1,33 +1,56 @@
 <!DOCTYPE html>
-           <html>
-             <head>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>Admin Dashboard</title>
-               <link rel="stylesheet" href="admin.css">
-           </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard — Prabin Yadav</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
 
-      <body>
+  <canvas id="adminBg"></canvas>
 
-              <div class="dashboard">
+<div class="dashboard">
 
-           <h2>Project Manager</h2>
+  <img src="assets/logo.png" class="logo" alt="Prabin Logo">
 
-               <input id="title" placeholder="Project Title">
-             <input id="desc" placeholder="Project Description">
-                     <input type="file" id="imgFile" accept="image/*">
+  <h2>Project Manager</h2>
+  <p class="subtitle">Add or remove projects from your portfolio</p>
 
-                        <button onclick="addProject()">Add Project</button>
-
-                   <h3>Projects</h3>
-            <div id="projectAdminList"></div>
-
-                 <button id="logoutBtn">Logout</button>
-
-            </div>
-            
+  <div class="divider"></div>
 
 
-              <script type="module">
+  <div class="input-group">
+    <label class="input-label">Project Title</label>
+    <input id="title" type="text" placeholder="e.g. To-Do App">
+  </div>
+
+  <div class="input-group">
+    <label class="input-label">Description</label>
+    <input id="desc" type="text" placeholder="Brief project description">
+  </div>
+
+  <div class="input-group">
+    <label class="input-label">Project Image</label>
+    <input type="file" id="imgFile" accept="image/*">
+  </div>
+
+  <button onclick="addProject()">+ Add Project</button>
+
+  <div class="divider"></div>
+
+
+  <h3>Your Projects</h3>
+  <div id="projectAdminList"></div>
+
+  <div class="divider"></div>
+
+  <button id="logoutBtn">↩ Logout</button>
+
+</div>
+
+
+<script type="module">
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
 import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 
@@ -39,7 +62,6 @@ const firebaseConfig = {
     messagingSenderId: "30623016582",
     appId: "1:30623016582:web:b1ea62a0da6dad1752d307",
     measurementId: "G-LMJMDB4TBF"
-
 };
 
 const app = initializeApp(firebaseConfig);
@@ -61,8 +83,8 @@ if (logoutBtn) {
 }
 </script>
 
-        <script src="admin.js"></script>
-       </body>
+<script src="bg.js"></script>
+<script src="admin.js"></script>
+
+</body>
 </html>
-
-
