@@ -90,13 +90,13 @@ body::after {
   width: 100%;
   max-width: 420px;
   background: rgba(8, 14, 26, 0.50);
-  border: 1px solid rgba(96,165,250,0.2);
+  border: 1px solid rgba(255,255,255,0.08);
   border-radius: var(--radius-lg);
   padding: 48px 44px;
   backdrop-filter: blur(7px);
   -webkit-backdrop-filter: blur(7px);
-  box-shadow: 0 40px 80px -20px rgba(0,0,0,0.7),
-              0 0 0 1px rgba(255,255,255,0.04) inset;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6),
+              0 0 60px rgba(0,150,255,0.25);
     
   animation: cardIn .7s cubic-bezier(.16,1,.3,1) both;
 }
@@ -113,6 +113,10 @@ body::after {
   border-radius: var(--radius-lg) var(--radius-lg) 0 0;
 }
 
+.container:hover {
+  transform: translateY(-3px);
+  transition: 0.3s ease;
+}
 
 .dashboard {
   position: relative;
@@ -120,13 +124,13 @@ body::after {
   width: 100%;
   max-width: 500px;
   background: rgba(8, 14, 26, 0.50);
-  border: 1px solid rgba(96,165,250,0.2);
+  border: 1px solid rgba(255,255,255,0.08);
   border-radius: var(--radius-lg);
   padding: 40px 40px 36px;
   backdrop-filter: blur(7px);
   -webkit-backdrop-filter: blur(7px);
-  box-shadow: 0 40px 80px -20px rgba(0,0,0,0.7),
-              0 0 0 1px rgba(255,255,255,0.04) inset;
+   box-shadow: 0 20px 60px rgba(0,0,0,0.6),
+               0 0 60px rgba(0,150,255,0.25);
 
   animation: cardIn .7s cubic-bezier(.16,1,.3,1) both;
   max-height: 90vh;
@@ -146,6 +150,10 @@ body::after {
   border-radius: var(--radius-lg) var(--radius-lg) 0 0;
 }
 
+.dashboard:hover {
+  transform: translateY(-3px);
+  transition: 0.3s ease;
+}
 
 .logo {
   width: 80px;
@@ -153,7 +161,7 @@ body::after {
   object-fit: contain;
   display: block;
   margin: 0 auto 24px;
-  filter: drop-shadow(0 0 16px rgba(96,165,250,0.35));
+  filter: drop-shadow(0 0 18px rgba(0,150,255,0.7));
   animation: logoFloat 3s ease-in-out infinite;
 }
 
@@ -230,25 +238,46 @@ input[type="password"],
 input[type="file"] {
   width: 100%;
   padding: 13px 16px;
-  background: rgba(255,255,255,0.04);
-  border: 1px solid var(--border-2);
-  border-radius: 10px;
+
+  background: rgba(255,255,255,0.03);
+  backdrop-filter: blur(6px);
+
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 12px;
+
   color: var(--text);
   font-family: var(--font-b);
   font-size: 0.9rem;
+
   outline: none;
-  transition: border-color .25s, background .25s, box-shadow .25s;
+
+  box-shadow: inset 0 1px 2px rgba(255,255,255,0.04);
+
+  transition: all 0.25s ease;
 }
 
+
 input::placeholder { 
-    color: var(--text-3); 
+  color: rgba(255,255,255,0.35);
+  letter-spacing: 0.02em;
+}
+
+input:hover {
+  border-color: rgba(96,165,250,0.4);
 }
 
 input:focus {
-  border-color: var(--accent);
-  background: rgba(96,165,250,0.04);
-  box-shadow: 0 0 0 3px rgba(96,165,250,0.12);
+  border-color: rgba(96,165,250,0.7);
+
+  background: rgba(96,165,250,0.06);
+
+  box-shadow:
+    0 0 0 2px rgba(96,165,250,0.15),
+    0 0 12px rgba(96,165,250,0.25);
+
+  transform: translateY(-1px);
 }
+
 
 input[type="file"] {
   padding: 10px 16px;
@@ -258,18 +287,23 @@ input[type="file"] {
 }
 
 input[type="file"]::-webkit-file-upload-button {
-  background: rgba(96,165,250,0.1);
+  background: rgba(96,165,250,0.12);
   border: 1px solid var(--border);
   border-radius: 6px;
+
   color: var(--accent);
   font-family: var(--font-d);
   font-size: 10px;
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+
   padding: 6px 14px;
   cursor: pointer;
   margin-right: 12px;
+
+  box-shadow: 0 0 10px rgba(96,165,250,0.2);
+
   transition: .2s;
 }
 
