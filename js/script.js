@@ -39,9 +39,21 @@ document.addEventListener("DOMContentLoaded", async () => {
   if (!projectList) return;
 
   const defaultProjects = [
-    { title: "To-Do App", desc: "Task manager application", img: "images/todo.png" },
-    { title: "Tic Tac Toe", desc: "Interactive 2-player game", img: "images/tictactoe.png" },
-    { title: "Portfolio Website", desc: "Personal portfolio website", img: "images/portfolio.png" }
+    { 
+      title: "To-Do App", 
+      desc: "Task manager application", 
+      img: "images/todo.png" 
+    },
+    { 
+      title: "Tic Tac Toe", 
+      desc: "Interactive 2-player game", 
+      img: "images/tictactoe.png" 
+    },
+    { 
+      title: "Portfolio Website", 
+      desc: "Personal portfolio website", 
+      img: "images/portfolio.png" 
+    }
   ];
 
   let projects = defaultProjects;
