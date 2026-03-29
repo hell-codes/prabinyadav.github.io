@@ -1,3 +1,7 @@
+/* =========================
+   🔤 Typing Animation
+   ========================= */
+
 const PHRASES = [
   "Student Developer",
   "Problem Solver",
@@ -34,63 +38,68 @@ function typeLoop() {
 setTimeout(typeLoop, 800);
 
 
+/* =========================
+   🚀 FIRESTORE
+   ========================= */
+
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import { getFirestore, collection, getDocs } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyC88KmP_zGtFuPh7lLmurCqYwtYyDw3Ff0",
+  authDomain: "prabin-portfolio-admin.firebaseapp.com",
+  projectId: "prabin-portfolio-admin",
+  storageBucket: "prabin-portfolio-admin.firebasestorage.app",
+  messagingSenderId: "30623016582",
+  appId: "1:30623016582:web:b1ea62a0da6dad1752d307"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+
+/* =========================
+   📦 LOAD PROJECTS
+   ========================= */
+
 document.addEventListener("DOMContentLoaded", async () => {
   const projectList = document.getElementById("projectList");
-  if (!projectList) return;
 
-  const defaultProjects = [
-    { 
-      title: "To-Do App", 
-      desc: "Task manager application", 
-      img: "images/todo.png" 
-    },
-    { 
-      title: "Tic Tac Toe", 
-      desc: "Interactive 2-player game", 
-      img: "images/tictactoe.png" 
-    },
-    { 
-      title: "Portfolio Website", 
-      desc: "Personal portfolio website", 
-      img: "images/portfolio.png" 
-    }
-  ];
+  if (!projectList) {
+    console.error("❌ projectList not found");
+    return;
+  }
 
-  let projects = defaultProjects;
+  let projects = [];
 
   try {
-    const { initializeApp, getApps } = await import("https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js");
-    const { getFirestore, collection, getDocs, query, orderBy, limit } =
-      await import("https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js");
+    const snap = await getDocs(collection(db, "projects"));
 
-    const firebaseConfig = {
-      apiKey: "AIzaSyC88KmP_zGtFuPh7lLmurCqYwtYyDw3Ff0",
-      authDomain: "prabin-portfolio-admin.firebaseapp.com",
-      projectId: "prabin-portfolio-admin",
-      storageBucket: "prabin-portfolio-admin.firebasestorage.app",
-      messagingSenderId: "30623016582",
-      appId: "1:30623016582:web:b1ea62a0da6dad1752d307"
-    };
+    console.log("Firestore docs:", snap.size); // 🔍 DEBUG
 
-    const app = getApps().length ? getApps()[0] : initializeApp(firebaseConfig);
-    const db = getFirestore(app);
-
-    const q = query(
-      collection(db, "projects"),
-      orderBy("createdAt", "desc"),
-      limit(3)
-    );
-
-    const snap = await getDocs(q);
-
-    if (!snap.empty) {
-      projects = [];
-      snap.forEach(doc => projects.push(doc.data()));
-    }
+    snap.forEach(doc => {
+      projects.push(doc.data());
+    });
 
   } catch (e) {
-    console.warn("Firestore failed, using default projects:", e);
+    console.error("🔥 Firestore ERROR:", e);
   }
+
+  // 🔥 IMPORTANT: fallback if empty
+  if (projects.length === 0) {
+    console.warn("⚠️ No Firestore data — using default");
+
+    projects = [
+      { title: "To-Do App", desc: "Task manager application", img: "images/todo.png" },
+      { title: "Tic Tac Toe", desc: "Interactive 2-player game", img: "images/tictactoe.png" },
+      { title: "Portfolio Website", desc: "Personal portfolio website", img: "images/portfolio.png" }
+    ];
+  }
+
+  // 🔥 limit to 3
+  projects = projects.slice(0, 3);
+
+  projectList.innerHTML = "";
 
   projects.forEach((p, i) => {
     const card = document.createElement("div");
@@ -99,9 +108,9 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     card.innerHTML = `
       <div class="card-img">
-        <img src="${p.img}" alt="${p.title}" loading="lazy">
+        <img src="${p.img}" alt="${p.title}">
       </div>
-
+      
       <div class="card-body">
         <h3>${p.title}</h3>
         <p>${p.desc}</p>
@@ -111,18 +120,28 @@ document.addEventListener("DOMContentLoaded", async () => {
     projectList.appendChild(card);
   });
 
-  document.dispatchEvent(new Event("cardsReady"));
+  console.log("✅ Projects rendered:", projects);
 });
+
+
+/* =========================
+   🌌 PARTICLES BACKGROUND (RESTORED)
+   ========================= */
 
 const canvas = document.getElementById("particles");
 
 if (canvas) {
   const ctx = canvas.getContext("2d");
-  initCanvasResize(canvas);
 
-  const N = 90;
+  function resizeCanvas() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  }
 
-  const pts = Array.from({ length: N }, () => ({
+  resizeCanvas();
+  window.addEventListener("resize", resizeCanvas);
+
+  const pts = Array.from({ length: 90 }, () => ({
     x: Math.random() * canvas.width,
     y: Math.random() * canvas.height,
     vx: (Math.random() - 0.5) * 0.7,
@@ -167,6 +186,11 @@ if (canvas) {
 
   draw();
 }
+
+
+/* =========================
+   📩 Contact Form
+   ========================= */
 
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("contactForm");
