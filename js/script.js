@@ -1,7 +1,3 @@
-/* =========================
-   🔤 Typing Animation
-   ========================= */
-
 const PHRASES = [
   "Student Developer",
   "Problem Solver",
@@ -38,12 +34,14 @@ function typeLoop() {
 setTimeout(typeLoop, 800);
 
 
-/* =========================
-   🚀 FIRESTORE
-   ========================= */
-
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-import { getFirestore, collection, getDocs } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+import {
+  getFirestore,
+  collection,
+  getDocs,
+  query,
+  orderBy
+} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyC88KmP_zGtFuPh7lLmurCqYwtYyDw3Ff0",
@@ -58,59 +56,56 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 
-/* =========================
-   📦 LOAD PROJECTS
-   ========================= */
-
 document.addEventListener("DOMContentLoaded", async () => {
   const projectList = document.getElementById("projectList");
+  if (!projectList) return;
 
-  if (!projectList) {
-    console.error("❌ projectList not found");
-    return;
-  }
+  const DEFAULTS = [
+    { 
+      title: "To-Do App",          
+      desc: "Task manager application",    
+      img: "images/todo.png"       
+    },
+    { 
+      title: "Tic Tac Toe",        
+      desc: "Interactive 2-player game",   
+      img: "images/tictactoe.png"  
+    },
+    { 
+      title: "Portfolio Website",  
+      desc: "Personal portfolio website",  
+      img: "images/portfolio.png"  
+    }
+  ];
 
   let projects = [];
 
   try {
-    const snap = await getDocs(collection(db, "projects"));
+    
+    const q    = query(collection(db, "projects"), orderBy("createdAt", "desc"));
+    const snap = await getDocs(q);
 
-    console.log("Firestore docs:", snap.size); // 🔍 DEBUG
-
-    snap.forEach(doc => {
-      projects.push(doc.data());
-    });
-
+    snap.forEach(doc => projects.push(doc.data()));
   } catch (e) {
-    console.error("🔥 Firestore ERROR:", e);
+    console.warn("Firestore unavailable — using defaults:", e);
   }
 
-  // 🔥 IMPORTANT: fallback if empty
-  if (projects.length === 0) {
-    console.warn("⚠️ No Firestore data — using default");
+  if (projects.length === 0) projects = DEFAULTS;
 
-    projects = [
-      { title: "To-Do App", desc: "Task manager application", img: "images/todo.png" },
-      { title: "Tic Tac Toe", desc: "Interactive 2-player game", img: "images/tictactoe.png" },
-      { title: "Portfolio Website", desc: "Personal portfolio website", img: "images/portfolio.png" }
-    ];
-  }
-
-  // 🔥 limit to 3
-  projects = projects.slice(0, 3);
+  const display = projects.slice(0, 3);
 
   projectList.innerHTML = "";
 
-  projects.forEach((p, i) => {
+  display.forEach((p, i) => {
     const card = document.createElement("div");
     card.className = "card reveal";
     card.style.transitionDelay = (i * 90) + "ms";
 
     card.innerHTML = `
       <div class="card-img">
-        <img src="${p.img}" alt="${p.title}">
+        <img src="${p.img}" alt="${p.title}" loading="lazy">
       </div>
-      
+
       <div class="card-body">
         <h3>${p.title}</h3>
         <p>${p.desc}</p>
@@ -120,13 +115,14 @@ document.addEventListener("DOMContentLoaded", async () => {
     projectList.appendChild(card);
   });
 
-  console.log("✅ Projects rendered:", projects);
+  // Trigger reveal animations
+  requestAnimationFrame(() => {
+    document.querySelectorAll("#projectList .card").forEach(c => {
+      c.classList.add("visible");
+    });
+  });
 });
 
-
-/* =========================
-   🌌 PARTICLES BACKGROUND (RESTORED)
-   ========================= */
 
 const canvas = document.getElementById("particles");
 
@@ -134,7 +130,7 @@ if (canvas) {
   const ctx = canvas.getContext("2d");
 
   function resizeCanvas() {
-    canvas.width = window.innerWidth;
+    canvas.width  = window.innerWidth;
     canvas.height = window.innerHeight;
   }
 
@@ -142,11 +138,11 @@ if (canvas) {
   window.addEventListener("resize", resizeCanvas);
 
   const pts = Array.from({ length: 90 }, () => ({
-    x: Math.random() * canvas.width,
-    y: Math.random() * canvas.height,
+    x:  Math.random() * canvas.width,
+    y:  Math.random() * canvas.height,
     vx: (Math.random() - 0.5) * 0.7,
     vy: (Math.random() - 0.5) * 0.7,
-    r: Math.random() * 1.5 + 0.5
+    r:  Math.random() * 1.5 + 0.5
   }));
 
   function draw() {
@@ -161,18 +157,18 @@ if (canvas) {
       p.x += p.vx;
       p.y += p.vy;
 
-      if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
+      if (p.x < 0 || p.x > canvas.width)  p.vx *= -1;
       if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
 
       for (let j = i + 1; j < pts.length; j++) {
-        const q = pts[j];
+        const q  = pts[j];
         const dx = p.x - q.x;
         const dy = p.y - q.y;
-        const d = Math.sqrt(dx * dx + dy * dy);
+        const d  = Math.sqrt(dx * dx + dy * dy);
 
         if (d < 130) {
           ctx.strokeStyle = `rgba(96,165,250,${0.18 * (1 - d / 130)})`;
-          ctx.lineWidth = 0.8;
+          ctx.lineWidth   = 0.8;
           ctx.beginPath();
           ctx.moveTo(p.x, p.y);
           ctx.lineTo(q.x, q.y);
@@ -187,10 +183,6 @@ if (canvas) {
   draw();
 }
 
-
-/* =========================
-   📩 Contact Form
-   ========================= */
 
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("contactForm");
