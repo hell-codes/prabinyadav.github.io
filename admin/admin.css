@@ -271,9 +271,9 @@ input:focus {
 
   background: rgba(96,165,250,0.06);
 
-  box-shadow:
-    0 0 0 2px rgba(96,165,250,0.15),
-    0 0 12px rgba(96,165,250,0.25);
+  box-shadow: 0 0 0 2px rgba(96,165,250,0.15),
+              0 0 12px rgba(96,165,250,0.25);
+    
 
   transform: translateY(-1px);
 }
@@ -345,14 +345,16 @@ button:hover::before {
 }
 
 button[type="submit"],
-button[onclick="addProject()"] {
+button[onclick="addProject()"],
+#addBtn {
   background: linear-gradient(135deg, #06b6d4, #3b82f6);
   color: #fff;
   box-shadow: 0 4px 20px rgba(96,165,250,0.25);
 }
 
 button[type="submit"]:hover,
-button[onclick="addProject()"]:hover {
+button[onclick="addProject()"]:hover,
+#addBtn:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 28px rgba(96,165,250,0.4);
 }
