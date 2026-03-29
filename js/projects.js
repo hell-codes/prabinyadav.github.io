@@ -50,39 +50,64 @@ if (canvas) {
   drawGrid();
 }
 
-
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
   const list = document.getElementById("projectList");
   if (!list) return;
 
   const defaults = [
-    { title:"To-Do App",           
-      desc:"Task management app with add, complete & delete.",   
+    { 
+      title:"To-Do App",           
+      desc:"Task management web application.",    
       img:"images/todo.png"       
     },
-
-    { title:"Tic Tac Toe",         
-      desc:"Interactive two-player game with win detection.",     
+    { 
+      title:"Tic Tac Toe",         
+      desc:"Interactive two-player game.",        
       img:"images/tictactoe.png"  
     },
-
-    { title:"Portfolio Website",   
-      desc:"Personal portfolio showcasing skills and projects.",  
+    { 
+      title:"Portfolio Website",   
+      desc:"Personal portfolio website.",         
       img:"images/portfolio.png"  
     },
-
-    { title:"Death Clock — Hell Mode", 
-      desc:"Predict your death date for fun.",               
+    { 
+      title:"Death Clock — Hell Mode", 
+      desc:"Predict your death date for fun.",
       img:"images/deathclock.png" 
-    },
-
-    { title:"Weather-APP", 
-      desc:"Predict your death date for fun.",               
-      img:"images/deathclock.png"
-    }    
+    }
   ];
 
-  const projects = JSON.parse(localStorage.getItem("projects")) || defaults;
+  let projects = defaults;
+
+  try {
+    const { initializeApp, getApps } = await import("https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js");
+    const { getFirestore, collection, getDocs, query, orderBy } =
+      await import("https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js");
+
+    const firebaseConfig = {
+      apiKey:            "AIzaSyC88KmP_zGtFuPh7lLmurCqYwtYyDw3Ff0",
+      authDomain:        "prabin-portfolio-admin.firebaseapp.com",
+      projectId:         "prabin-portfolio-admin",
+      storageBucket:     "prabin-portfolio-admin.firebasestorage.app",
+      messagingSenderId: "30623016582",
+      appId:             "1:30623016582:web:b1ea62a0da6dad1752d307"
+    };
+
+    const app = getApps().length
+      ? getApps()[0]
+      : initializeApp(firebaseConfig);
+
+    const db   = getFirestore(app);
+    const q    = query(collection(db, "projects"), orderBy("createdAt", "desc"));
+    const snap = await getDocs(q);
+
+    if (!snap.empty) {
+      projects = [];
+      snap.forEach(d => projects.push(d.data()));
+    }
+  } catch (e) {
+    console.warn("Firestore unavailable, using defaults:", e);
+  }
 
   projects.forEach((p, i) => {
     const card = document.createElement("div");
@@ -90,21 +115,18 @@ document.addEventListener("DOMContentLoaded", () => {
     card.style.cssText = `opacity:0; transform:translateY(28px);
       transition: opacity .7s cubic-bezier(.16,1,.3,1) ${i*100}ms,
                   transform .7s cubic-bezier(.16,1,.3,1) ${i*100}ms`;
-
     card.innerHTML = `
       <div class="card-img">
         <img src="${p.img}" alt="${p.title}" loading="lazy">
       </div>
-      
+
       <div class="card-body">
         <h3>${p.title}</h3>
         <p>${p.desc}</p>
       </div>`;
-
     list.appendChild(card);
   });
 
- 
   const obs = new IntersectionObserver(entries => {
     entries.forEach(e => {
       if (!e.isIntersecting) return;
@@ -112,7 +134,7 @@ document.addEventListener("DOMContentLoaded", () => {
       e.target.style.transform = "none";
       obs.unobserve(e.target);
     });
-  }, { threshold: 0.08, rootMargin: "0px 0px -30px 0px" });
+  }, { threshold: 0.08 });
 
   list.querySelectorAll(".card").forEach(c => obs.observe(c));
 });
