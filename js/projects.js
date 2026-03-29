@@ -74,7 +74,12 @@ document.addEventListener("DOMContentLoaded", () => {
     { title:"Death Clock — Hell Mode", 
       desc:"Predict your death date for fun.",               
       img:"images/deathclock.png" 
-    }
+    },
+
+    { title:"Weather-APP", 
+      desc:"Predict your death date for fun.",               
+      img:"images/deathclock.png"
+    }    
   ];
 
   const projects = JSON.parse(localStorage.getItem("projects")) || defaults;
