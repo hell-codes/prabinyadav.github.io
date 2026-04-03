@@ -4,7 +4,7 @@ const ctx    = canvas.getContext("2d");
 let particles = [];
 let mouse     = { x: null, y: null };
 
-const isMobile       = window.innerWidth < 768;
+const isMobile     = window.innerWidth < 768;
 const PARTICLE_COUNT = isMobile ? 35 : 100;   
 const CONNECT_DIST   = isMobile ? 8000 : 12000; 
 
@@ -12,7 +12,6 @@ function resizeCanvas() {
   canvas.width  = window.innerWidth;
   canvas.height = window.innerHeight;
 }
-
 resizeCanvas();
 window.addEventListener("resize", resizeCanvas);
 
@@ -84,7 +83,7 @@ function connect() {
 let waveOffset = 0;
 
 function drawWave() {
-
+  
   if (isMobile) {
     ctx.beginPath();
     ctx.strokeStyle = "rgba(96,165,250,0.25)";
@@ -144,3 +143,37 @@ window.addEventListener("mouseleave", () => {
   mouse.x = null; 
   mouse.y = null; 
 });
+
+(function initCursor() {
+  if (window.matchMedia("(hover:none)").matches) return;
+
+  const dot  = document.createElement("div"); dot.id = "cursor-dot";
+  const ring = document.createElement("div"); ring.id = "cursor-ring";
+  document.body.append(dot, ring);
+
+  let mx = -100, my = -100, rx = -100, ry = -100;
+
+  document.addEventListener("mousemove", e => {
+    mx = e.clientX; my = e.clientY;
+    dot.style.left = mx + "px";
+    dot.style.top  = my + "px";
+  }, { passive: true });
+
+  (function loop() {
+    rx += (mx - rx) * 0.12;
+    ry += (my - ry) * 0.12;
+    ring.style.left = rx + "px";
+    ring.style.top  = ry + "px";
+    requestAnimationFrame(loop);
+  })();
+
+  const SEL = "a, button, input, label";
+  document.addEventListener("mouseover", e => {
+    if (e.target.closest(SEL)) ring.classList.add("hovered");
+  });
+
+  document.addEventListener("mouseout", e => {
+    if (e.target.closest(SEL)) ring.classList.remove("hovered");
+  });
+
+})();
