@@ -44,6 +44,48 @@ body {
   padding: 24px;
   position: relative;
   overflow: hidden;
+  cursor: none;
+}
+
+#cursor-dot {
+  position: fixed;
+  width: 8px; 
+  height: 8px;
+  background: var(--accent);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99999;
+  transform: translate(-50%, -50%);
+  transition: transform .15s ease, opacity .3s;
+  mix-blend-mode: difference;
+}
+
+#cursor-ring {
+  position: fixed;
+  width: 36px; 
+  height: 36px;
+  border: 1.5px solid rgba(96,165,250,0.6);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99998;
+  transform: translate(-50%, -50%);
+  transition: width .2s, height .2s, border-color .2s;
+}
+
+#cursor-ring.hovered {
+  width: 54px; 
+  height: 54px;
+  border-color: var(--accent-2);
+  background: rgba(52,211,153,0.04);
+}
+
+@media (hover: none) {
+  #cursor-dot, #cursor-ring { 
+    display: none; 
+  }
+  body { 
+    cursor: auto; 
+  }
 }
 
 
