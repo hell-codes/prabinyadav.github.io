@@ -73,7 +73,7 @@
     function openMenu() {
       navLinks.classList.add("active");
       if (menuIcon) menuIcon.textContent = "✖";
-      document.body.classList.add("menu-open");
+    
     }
 
     function closeMenu() {
