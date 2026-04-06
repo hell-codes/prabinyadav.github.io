@@ -34,14 +34,19 @@ function typeLoop() {
 setTimeout(typeLoop, 800);
 
 
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import { 
+  initializeApp 
+} 
+from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+
 import {
   getFirestore,
   collection,
   getDocs,
   query,
   orderBy
-} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+} 
+from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyC88KmP_zGtFuPh7lLmurCqYwtYyDw3Ff0",
@@ -90,16 +95,23 @@ document.addEventListener("DOMContentLoaded", async () => {
     console.warn("Firestore unavailable — using defaults:", e);
   }
 
+  
   if (projects.length === 0) projects = DEFAULTS;
 
+  
   const display = projects.slice(0, 3);
 
   projectList.innerHTML = "";
 
   display.forEach((p, i) => {
     const card = document.createElement("div");
-    card.className = "card reveal";
-    card.style.transitionDelay = (i * 90) + "ms";
+    card.className = "card";
+    
+    card.style.cssText = `
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity .7s cubic-bezier(.16,1,.3,1) ${i * 120}ms,
+                  transform .7s cubic-bezier(.16,1,.3,1) ${i * 120}ms`;
 
     card.innerHTML = `
       <div class="card-img">
@@ -115,12 +127,16 @@ document.addEventListener("DOMContentLoaded", async () => {
     projectList.appendChild(card);
   });
 
-  // Trigger reveal animations
-  requestAnimationFrame(() => {
-    document.querySelectorAll("#projectList .card").forEach(c => {
-      c.classList.add("visible");
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      e.target.style.opacity   = "1";
+      e.target.style.transform = "none";
+      obs.unobserve(e.target);
     });
-  });
+  }, { threshold: 0.1 });
+
+  projectList.querySelectorAll(".card").forEach(c => obs.observe(c));
 });
 
 
