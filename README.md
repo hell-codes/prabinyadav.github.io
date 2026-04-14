@@ -1,55 +1,64 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:04080f,30:071428,60:0d1f42,100:1a3a6e&height=260&section=header&text=Prabin%20Yadav&fontSize=72&fontColor=60a5fa&fontAlignY=42&desc=Full-Stack%20Portfolio%20%E2%80%94%20HTML%20%C2%B7%20CSS%20%C2%B7%20Vanilla%20JS%20%C2%B7%20Firebase&descAlignY=64&descSize=16&descColor=94a3b8&animation=fadeIn" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=venom&color=0:000408,30:020d1f,60:061428,100:0a1f3d&height=300&section=header&text=PRABIN%20YADAV&fontSize=80&fontColor=60a5fa&fontAlignY=45&desc=Portfolio%20%E2%80%94%20Crafted%20in%20Pure%20HTML%20%C2%B7%20CSS%20%C2%B7%20JavaScript&descAlignY=67&descSize=17&descColor=475569&animation=twinkling" />
+
+</div>
+
+<!---------- BADGES ROW ---------->
+<div align="center">
 
 <br/>
 
-<a href="https://prabinyadav.dev">
-  <img src="https://img.shields.io/badge/%F0%9F%8C%90%20Live%20Site-prabinyadav.dev-60a5fa?style=for-the-badge&labelColor=04080f" />
-</a>
+[![Live](https://img.shields.io/badge/◉%20LIVE-prabinyadav.dev-60a5fa?style=for-the-badge&labelColor=020d1f&color=60a5fa)](https://prabinyadav.dev)
 &nbsp;
-<a href="https://github.com/hell-codes">
-  <img src="https://img.shields.io/badge/GitHub-hell--codes-34d399?style=for-the-badge&logo=github&logoColor=white&labelColor=04080f" />
-</a>
+[![GitHub](https://img.shields.io/badge/⌥%20SOURCE-hell--codes-34d399?style=for-the-badge&labelColor=020d1f)](https://github.com/hell-codes)
 &nbsp;
-<a href="https://linkedin.com/in/prabinyadav">
-  <img src="https://img.shields.io/badge/LinkedIn-prabinyadav-0077b5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=04080f" />
-</a>
+[![LinkedIn](https://img.shields.io/badge/↗%20CONNECT-prabinyadav-0ea5e9?style=for-the-badge&labelColor=020d1f&logo=linkedin&logoColor=0ea5e9)](https://linkedin.com/in/prabinyadav)
 &nbsp;
-<img src="https://visitor-badge.laobi.icu/badge?page_id=hell-codes.prabinyadav-portfolio&style=for-the-badge&color=60a5fa&labelColor=04080f" />
+![Visitors](https://visitor-badge.laobi.icu/badge?page_id=hell-codes.prabinyadav-portfolio&style=for-the-badge&color=34d399&labelColor=020d1f&label=VISITORS)
 
 <br/><br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=15&pause=1200&color=60A5FA&center=true&vCenter=true&width=600&lines=Dark+luxury+aesthetic+%C2%B7+Zero+frameworks;Canvas+animations+on+every+page;Admin+dashboard+%2B+Firebase+backend;Built+from+scratch+%E2%80%94+pure+vanilla+JS" alt="Typing SVG" />
-
-<br/>
-
-> **"A developer portfolio that feels like a product — not a template."**
-
-<br/>
-
-<img width="90%" src="images/portfolio.png" alt="Portfolio Preview" />
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=14&duration=3000&pause=800&color=60A5FA&center=true&vCenter=true&multiline=false&width=580&lines=No+frameworks.+No+build+step.+No+compromises.;Canvas+animations+unique+to+every+single+page.;Real+Firebase+backend+with+admin+dashboard.;Built+from+scratch+by+a+1st+year+CS+student.)](https://git.io/typing-svg)
 
 </div>
 
 <br/>
 
-<img width="100%" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" />
+<!---------- DIVIDER ---------->
+<img width="100%" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
 
 <br/>
 
-## ◈ &nbsp;What Makes This Different
+<!---------- HERO STATEMENT ---------->
+<div align="center">
+
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│                                                                     │
+│   A developer portfolio that feels like a product, not a template. │
+│   Dark luxury aesthetic. Real cloud database. Zero dependencies.    │
+│                                                                     │
+└─────────────────────────────────────────────────────────────────────┘
+```
+
+</div>
 
 <br/>
 
 <div align="center">
-
-```
- No React.  No Vue.  No Tailwind.  No build step.
- Just HTML, CSS, and JavaScript — doing things you didn't think were possible without a framework.
-```
-
+<img width="88%" src="images/portfolio.png" alt="Portfolio Preview" />
 </div>
+
+<br/>
+
+<img width="100%" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
+
+<br/>
+
+<!---------- WHAT SECTION ---------->
+
+## <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="28"> &nbsp;Why This Portfolio Stands Out
 
 <br/>
 
@@ -57,24 +66,27 @@
 <tr>
 <td width="50%" valign="top">
 
-### 🎨 &nbsp;Design
-- Dark luxury color system with deep navy + electric blue accents
-- Custom animated cursor with magnetic hover ring
-- Every single page has its **own unique canvas animation**
-- Scroll progress bar that tracks reading position live
-- Dark ↔ Light mode toggle with localStorage memory
-- Glassmorphism cards with gradient borders
+**🎨 &nbsp;Designed with intention**
+```
+Every page has its own unique animated
+canvas background — no two pages feel
+the same. The cursor, the transitions,
+the skill bars, the reveal animations —
+everything is handcrafted in vanilla JS.
+```
 
 </td>
 <td width="50%" valign="top">
 
-### ⚙️ &nbsp;Engineering
-- Zero dependencies — pure vanilla JavaScript
-- `IntersectionObserver` for all scroll-reveal animations
-- Firebase Firestore as a real-time cloud database
-- Image compression pipeline before upload (canvas → JPEG)
-- Firebase Auth–protected admin dashboard
-- Mobile-optimised canvas (fewer particles, no `shadowBlur`)
+**⚙️ &nbsp;Engineered with care**
+```
+Firebase Firestore as a real backend.
+Images auto-compressed via Canvas API
+before upload. IntersectionObserver for
+scroll animations. Mobile canvas uses
+fewer particles to prevent lag. Zero
+npm packages. Zero build tools.
+```
 
 </td>
 </tr>
@@ -82,271 +94,264 @@
 
 <br/>
 
-<img width="100%" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" />
+<img width="100%" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
 
 <br/>
 
-## ◈ &nbsp;Features at a Glance
+## <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="28"> &nbsp;Full Feature List
 
 <br/>
 
 <div align="center">
 
-| &nbsp; | Feature | What it does |
-|:------:|---------|-------------|
-| 🖱️ | **Custom Cursor** | Dot + trailing ring with magnetic hover enlarge effect |
-| 📊 | **Scroll Progress Bar** | Thin gradient bar at top — fills as you read |
-| 🌊 | **Canvas Backgrounds** | Unique animated scene on every page (see table below) |
-| 💡 | **Scroll-Reveal** | Elements fade + slide in via `IntersectionObserver` |
-| ⌨️ | **Typing Animation** | Cycles through developer roles character by character |
-| 📈 | **Animated Skill Bars** | Width animates to percentage when scrolled into view |
-| 🌙 | **Dark / Light Mode** | One-click toggle, persists across all pages and sessions |
-| 📱 | **Fully Responsive** | Fixed floating hamburger menu, fluid typography, reflowing grids |
-| ⭐ | **Featured Projects** | Choose exactly which 3 projects appear on the home page |
-| 🔐 | **Admin Dashboard** | Firebase Auth login → add / delete / feature projects |
-| 🖼️ | **Image Compression** | Auto-compresses uploads via canvas before saving to Firestore |
-| 📬 | **Contact Form** | Opens Gmail compose with visitor's message pre-filled |
-| ⚡ | **Zero Build Step** | Open `index.html` — it just works |
+|  | Feature | Details |
+|:---:|:--------|:--------|
+| 🖱️ | **Custom Cursor** | Dot + lagging ring · expands on hover over interactive elements |
+| 📊 | **Scroll Progress Bar** | Gradient fill bar at very top — tracks reading position live |
+| 🌊 | **Canvas Animations** | Unique hand-coded scene on every single page |
+| 👁️ | **Scroll-Reveal** | `IntersectionObserver` — elements animate in as you scroll |
+| ⭐ | **Featured Projects** | Choose exactly 3 projects to pin on home page from dashboard |
+| ⌨️ | **Typing Effect** | Roles cycle character-by-character with natural erase speed |
+| 📈 | **Skill Bars** | Animate to percentage only when scrolled into view |
+| 🌙 | **Dark / Light Mode** | One toggle · preference saved to `localStorage` across sessions |
+| 📱 | **Fully Responsive** | Fixed floating hamburger · dropdown nav · fluid `clamp()` typography |
+| 🔐 | **Admin Dashboard** | Firebase Auth login · add / feature / delete projects live |
+| 🖼️ | **Image Compression** | Canvas → JPEG pipeline · auto-compresses before Firestore upload |
+| 📬 | **Contact Form** | Opens Gmail compose with visitor message pre-filled · no backend |
+| ⚡ | **Zero Dependencies** | No React · No Tailwind · No webpack · Open `index.html` and go |
 
 </div>
 
 <br/>
 
-### 🎬 &nbsp;Canvas Backgrounds by Page
+### 🎬 &nbsp;Canvas Backgrounds — One Per Page
+
+<br/>
 
 <div align="center">
 
-| Page | Effect | Description |
-|------|:------:|-------------|
-| `index.html` | 🔵 | **Particle network** — 90 dots connected by proximity lines, all animated |
-| `about.html` | 🌊 | **Sine wave fill** — two layered waves scrolling in opposite phase |
-| `projects.html` | ⬡ | **Hex grid pulse** — teal hexagons rippling from center like sonar |
-| `services.html` | 🟢 | **Glowing orbs** — 18 radial-gradient blobs drifting and bouncing |
-| `resume.html` | 🟣 | **Falling lines** — 35 horizontal streaks raining downward |
-| `contact.html` | 🟡 | **Rising dots** — 65 particles floating upward and looping |
-| `admin/*` | 🔷 | **Particle web + wave** — network with mouse-repel + sine wave |
+| Page | Scene | How it works |
+|:----:|:-----:|:------------|
+| **Home** | 🔵 Particle Network | 90 dots drifting with velocity, connected by lines that fade with distance |
+| **About** | 🌊 Wave Fill | Two layered sine waves scrolling at different frequencies, filled to bottom |
+| **Projects** | ⬡ Hex Grid | Teal hexagon grid pulsing outward from center like sonar rings |
+| **Services** | 🟢 Glowing Orbs | 18 radial-gradient blobs drifting and bouncing off screen edges |
+| **Resume** | 🟣 Falling Lines | 35 horizontal streaks raining downward at varied speeds |
+| **Contact** | 🟡 Rising Dots | 65 particles floating upward, resetting at bottom endlessly |
+| **Admin** | 🔷 Particle Web | Network + mouse-repel effect + animated sine wave overlay |
 
 </div>
 
 <br/>
 
-<img width="100%" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" />
+<img width="100%" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
 
 <br/>
 
-## ◈ &nbsp;Project Structure
+## 📁 &nbsp;Project Structure
 
 <br/>
 
 ```
-📦 prabinyadav-portfolio
+📦 prabinyadav-portfolio/
 │
-├── 📂 admin/                        ← Protected admin panel
-│   ├── login.html                   ← Firebase Auth login
-│   ├── dashboard.html               ← Project manager (add/delete/feature)
-│   ├── admin.css                    ← Admin-only styles
-│   └── bg.js                        ← Admin canvas background + cursor
+├── 📂 admin/                         ← 🔐 Firebase-protected admin panel
+│   ├── login.html                    ← Email + password auth via Firebase
+│   ├── dashboard.html                ← Add · feature · delete projects
+│   ├── admin.css                     ← Admin-specific styles
+│   └── bg.js                         ← Particle canvas + custom cursor for admin
 │
 ├── 📂 css/
-│   └── style.css                    ← Master design system (variables, layout, animations)
+│   └── style.css                     ← 🎨 Master design system
+│                                        CSS variables · layout · animations · responsive
 │
 ├── 📂 js/
-│   ├── nav.js                       ← Shared: cursor · scroll bar · theme · nav · animations
-│   ├── script.js                    ← Home: typing · particles · Firestore featured projects
-│   ├── about.js                     ← About: wave canvas background
-│   ├── projects.js                  ← Projects: hex grid · all Firestore projects
-│   ├── services.js                  ← Services: floating orbs canvas
-│   ├── resume.js                    ← Resume: falling lines canvas
-│   └── contact.js                   ← Contact: rising dots · Gmail form handler
+│   ├── nav.js                        ← 🌐 Shared across ALL pages
+│   │                                    Cursor · scroll bar · sticky header · theme
+│   │                                    Active nav · hamburger menu · reveal animations
+│   │                                    Skill bars · timeline · canvas resize helper
+│   │
+│   ├── script.js                     ← 🏠 Home page only
+│   │                                    Typing animation · particle background
+│   │                                    Loads featured projects from Firestore
+│   │
+│   ├── about.js                      ← 👤 Wave canvas
+│   ├── projects.js                   ← 📂 Hex grid + loads ALL Firestore projects
+│   ├── services.js                   ← ⚙️  Glowing orbs canvas
+│   ├── resume.js                     ← 📄 Falling lines canvas
+│   └── contact.js                    ← 📬 Rising dots + Gmail form handler
 │
-├── 📂 images/                       ← All image assets (logo, profile, project screenshots)
-├── 📂 certificates/                 ← PDF certificates (android, ibm, java, python)
+├── 📂 images/                        ← logo · profile · project screenshots
+├── 📂 certificates/                  ← android.pdf · ibm.pdf · java.pdf · python.pdf
 │
-├── index.html                       ← Home page
-├── about.html                       ← About page
-├── projects.html                    ← Projects page
-├── services.html                    ← Services page
-├── resume.html                      ← Resume page
-├── contact.html                     ← Contact page
-└── resume.pdf                       ← Downloadable resume
+├── index.html                        ← Home
+├── about.html                        ← About
+├── projects.html                     ← Projects
+├── services.html                     ← Services
+├── resume.html                       ← Resume
+├── contact.html                      ← Contact
+└── resume.pdf                        ← Downloadable CV
 ```
 
 <br/>
 
-<img width="100%" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" />
+<img width="100%" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
 
 <br/>
 
-## ◈ &nbsp;Tech Stack
+## 🛠️ &nbsp;Tech Stack
 
 <br/>
 
 <div align="center">
 
-<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
-<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
-<img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" />
-<img src="https://img.shields.io/badge/Canvas_API-04080f?style=for-the-badge&logo=html5&logoColor=60a5fa" />
-<img src="https://img.shields.io/badge/Font_Awesome-528DD7?style=for-the-badge&logo=fontawesome&logoColor=white" />
-<img src="https://img.shields.io/badge/Google_Fonts-4285F4?style=for-the-badge&logo=google&logoColor=white" />
+<img src="https://skillicons.dev/icons?i=html,css,js,firebase&theme=dark&perline=4" />
 
 <br/><br/>
 
-| Layer | Technology | Purpose |
-|:-----:|-----------|---------|
-| Structure | HTML5 | Semantic markup across 6 pages |
-| Styling | CSS3 | Custom properties, grid, flexbox, keyframes |
-| Logic | Vanilla JS (ES6+) | All interactivity, canvas, Firestore calls |
-| Animations | Canvas 2D API | Per-page animated backgrounds |
-| Database | Firebase Firestore | Cloud storage for projects |
-| Auth | Firebase Authentication | Admin login protection |
-| Persistence | localStorage | Theme preference memory |
-| Icons | Font Awesome 6 | Social + UI icons |
-| Fonts | Google Fonts | Unbounded (display) · Plus Jakarta Sans (body) |
+| Layer | Technology | Role |
+|:-----:|:----------:|:-----|
+| ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) | HTML5 | Semantic structure across 6 public pages |
+| ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white) | CSS3 | Custom properties · grid · flexbox · keyframes · clamp |
+| ![JS](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) | Vanilla JS ES6+ | All logic · canvas · DOM · Firestore queries |
+| ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black) | Firestore + Auth | Cloud database · admin authentication |
+| ![Canvas](https://img.shields.io/badge/Canvas_2D_API-04080f?style=flat-square&logo=html5&logoColor=60a5fa) | Canvas API | All animated backgrounds — 7 unique scenes |
+| ![FA](https://img.shields.io/badge/Font_Awesome_6-528DD7?style=flat-square&logo=fontawesome&logoColor=white) | Font Awesome | Social + UI icons |
+| ![GF](https://img.shields.io/badge/Google_Fonts-4285F4?style=flat-square&logo=google&logoColor=white) | Google Fonts | Unbounded · Plus Jakarta Sans |
 
 </div>
 
 <br/>
 
-<img width="100%" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" />
+<img width="100%" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
 
 <br/>
 
-## ◈ &nbsp;Design System
-
-<br/>
-
-```css
-/* ━━━━━━━━━━━━━━━━━━  Color Palette  ━━━━━━━━━━━━━━━━━━ */
---bg:          #04080f;   /* Deep space black             */
---bg-2:        #080e1a;   /* Slightly lifted navy         */
---accent:      #60a5fa;   /* Electric blue — primary      */
---accent-2:    #34d399;   /* Emerald green — secondary    */
---accent-3:    #f472b6;   /* Pink — highlight             */
---text:        #f1f5f9;   /* Near white                   */
---text-2:      #94a3b8;   /* Muted slate                  */
-
-/* ━━━━━━━━━━━━━━━━━━  Typography  ━━━━━━━━━━━━━━━━━━━━ */
---font-display: 'Unbounded';          /* All headings & labels */
---font-body:    'Plus Jakarta Sans';  /* All paragraph text    */
-
-/* ━━━━━━━━━━━━━━━━━━  Spacing & Shape  ━━━━━━━━━━━━━━━━ */
---radius:    14px;   /* Cards, inputs       */
---radius-lg: 22px;   /* Sections, modals    */
---nav-h:     68px;   /* Sticky header height */
-```
-
-<br/>
-
-<img width="100%" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" />
-
-<br/>
-
-## ◈ &nbsp;Responsive Design
+## 🎨 &nbsp;Design System
 
 <br/>
 
 <div align="center">
 
-| Breakpoint | Layout Behaviour |
-|:----------:|-----------------|
-| `> 768px` | Full desktop nav · Two-column hero · Multi-column grids |
-| `≤ 768px` | **Fixed floating hamburger** · Dropdown menu · Single column |
-| `≤ 480px` | Compact hero · Single-column cards · Smaller typography |
+| Token | Value | Role |
+|:-----:|:-----:|:-----|
+| `--bg` | `#04080f` | Deep space black — page background |
+| `--accent` | `#60a5fa` | Electric blue — primary highlights |
+| `--accent-2` | `#34d399` | Emerald green — secondary highlights |
+| `--accent-3` | `#f472b6` | Pink — tertiary / hover states |
+| `--text` | `#f1f5f9` | Near white — primary text |
+| `--text-2` | `#94a3b8` | Slate — secondary / body text |
+| `--font-display` | `Unbounded` | All headings · labels · nav links |
+| `--font-body` | `Plus Jakarta Sans` | All paragraph text |
+| `--radius` | `14px` | Cards · inputs · buttons |
+| `--radius-lg` | `22px` | Sections · modals · panels |
 
 </div>
 
 <br/>
 
-**Key mobile decisions:**
-- Hamburger button is `position: fixed` — always visible no matter how far you scroll
-- Nav becomes a compact **dropdown** directly below the button (not a full-screen overlay)
-- Canvas animations automatically use fewer particles and skip `shadowBlur` on mobile to prevent lag
-- Custom cursor is hidden on touch devices — normal cursor restores automatically
-- Typography uses `clamp()` — scales fluidly between sizes without breakpoints
+<img width="100%" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
 
 <br/>
 
-<img width="100%" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" />
+## 📱 &nbsp;Responsive Design
 
 <br/>
 
-## ◈ &nbsp;Getting Started
+<div align="center">
+
+| Breakpoint | What changes |
+|:----------:|:------------|
+| `> 768px` | Full desktop nav · two-column hero · multi-column project grid |
+| `≤ 768px` | Floating fixed hamburger · compact dropdown nav · single column |
+| `≤ 480px` | Compact hero · single-column cards · smaller clamped typography |
+
+</div>
 
 <br/>
 
-### `1` &nbsp; Clone
+> **The hamburger button is `position: fixed`** — it floats in the top-right corner at all times, so no matter how deep you scroll, the menu is always one tap away. It opens as a compact dropdown right below the button — not a full-screen overlay.
 
+> **Canvas animations auto-downgrade on mobile** — particle count drops from 100 → 35, `shadowBlur` is removed entirely, and the wave loop steps every 4px instead of every pixel. Smooth on every device.
+
+> **Typography uses `clamp()`** — font sizes scale fluidly with screen width with no sudden jumps between breakpoints.
+
+<br/>
+
+<img width="100%" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
+
+<br/>
+
+## 🚀 &nbsp;Getting Started
+
+<br/>
+
+**Clone the repo**
 ```bash
 git clone https://github.com/hell-codes/prabinyadav-portfolio.git
 cd prabinyadav-portfolio
 ```
 
-### `2` &nbsp; Add your assets
-
+**Drop in your assets**
 ```
-images/logo.png       ←  your logo
-images/profile.jpg    ←  your photo
-resume.pdf            ←  your resume PDF
-certificates/         ←  your PDF certificates
+images/logo.png        ←  your logo
+images/profile.jpg     ←  your photo
+resume.pdf             ←  your resume
+certificates/          ←  your PDF certificates
 ```
 
-### `3` &nbsp; Run locally
-
+**Run locally**
 ```bash
-# No build step — just open the file
+# Simplest — just open in browser
 open index.html
 
-# Or serve with any local server (recommended for module imports)
+# Better — use a local server for ES module support
 npx serve .
 ```
 
-### `4` &nbsp; Deploy
+**Deploy in one step**
 
-| Platform | Steps |
-|----------|-------|
-| **GitHub Pages** | Push to `main` → Settings → Pages → Deploy from branch |
-| **Netlify** | Drag & drop the entire folder on netlify.com |
-| **Vercel** | `vercel --prod` or import repo on vercel.com |
-| **Firebase Hosting** | `firebase deploy` after `firebase init hosting` |
-
-<br/>
-
-<img width="100%" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" />
+| Platform | How |
+|:--------:|:----|
+| **GitHub Pages** | Settings → Pages → Deploy from `main` branch |
+| **Netlify** | Drag the folder to [netlify.com/drop](https://app.netlify.com/drop) |
+| **Vercel** | `npx vercel --prod` |
+| **Firebase Hosting** | `firebase init hosting` → `firebase deploy` |
 
 <br/>
 
-## ◈ &nbsp;Admin Panel
+<img width="100%" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
 
 <br/>
 
-> Access at `/admin/login.html` — protected by Firebase Authentication
+## 🔐 &nbsp;Admin Panel
 
 <br/>
+
+> Access at `/admin/login.html` · Protected by Firebase Authentication
 
 <details>
-<summary><b>&nbsp;&nbsp;🔐 &nbsp;Click to expand — Admin setup & features</b></summary>
+<summary><b>&nbsp;&nbsp;Expand — Setup guide &amp; dashboard features</b></summary>
 
 <br/>
 
-**What you can do from the dashboard:**
+**Dashboard capabilities:**
 
-| Action | Description |
+| Action | What happens |
 |--------|-------------|
-| ➕ Add project | Upload title, description, and image — auto-compressed before saving |
-| ⭐ Feature project | Mark up to 3 projects to appear on the home page |
-| 🗑️ Delete project | Removes from Firestore — disappears from site instantly |
+| ➕ **Add project** | Fill title + description + image → auto-compressed → saved to Firestore |
+| ⭐ **Feature project** | Toggle star to pin on home page · max 3 featured at once |
+| 🗑️ **Delete project** | Removed from Firestore · disappears from site instantly |
 
 <br/>
 
-**Firebase setup (for your own fork):**
+**Firebase setup for your own fork:**
 
-1. Go to [console.firebase.google.com](https://console.firebase.google.com) and create a project
-2. Enable **Firestore Database** and **Authentication** (Email/Password)
-3. Create an admin user under Authentication → Users
-4. Replace the `firebaseConfig` object in `admin/login.html` and `admin/dashboard.html`
-5. Set Firestore rules:
+1. Create a project at [console.firebase.google.com](https://console.firebase.google.com)
+2. Enable **Firestore Database** and **Authentication → Email/Password**
+3. Add yourself as a user under Authentication → Users
+4. Replace `firebaseConfig` in `admin/login.html` and `admin/dashboard.html`
+5. Set these Firestore security rules:
 
 ```js
 rules_version = '2';
@@ -360,53 +365,62 @@ service cloud.firestore {
 }
 ```
 
-6. Create a Firestore **composite index**: `featured (ASC)` + `createdAt (DESC)` on the `projects` collection
+6. Create a **composite index** on the `projects` collection:
+   - `featured` → Ascending
+   - `createdAt` → Descending
+
+   *(Firebase will show a direct link in the console the first time you load the home page — click it and it builds automatically)*
 
 </details>
 
 <br/>
 
-<img width="100%" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" />
+<img width="100%" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
 
 <br/>
 
-## ◈ &nbsp;Contact
+## 📬 &nbsp;Contact
 
 <br/>
 
 <div align="center">
 
-| &nbsp; | Platform | Link |
-|:------:|----------|------|
-| 🌐 | **Website** | [prabinyadav.dev](https://prabinyadav.dev) |
-| 📧 | **Email** | [prabin.yadav.0.0.18@gmail.com](mailto:prabin.yadav.0.0.18@gmail.com) |
-| 💼 | **LinkedIn** | [linkedin.com/in/prabinyadav](https://linkedin.com/in/prabinyadav) |
-| 🐙 | **GitHub** | [github.com/hell-codes](https://github.com/hell-codes) |
-| 📸 | **Instagram** | [@crazy.prabin_18](https://instagram.com/crazy.prabin_18) |
+| &nbsp; | Where | Link |
+|:------:|:-----:|:-----|
+| 🌐 | Website | [prabinyadav.dev](https://prabinyadav.dev) |
+| 📧 | Email | [prabin.yadav.0.0.18@gmail.com](mailto:prabin.yadav.0.0.18@gmail.com) |
+| 💼 | LinkedIn | [linkedin.com/in/prabinyadav](https://linkedin.com/in/prabinyadav) |
+| 🐙 | GitHub | [github.com/hell-codes](https://github.com/hell-codes) |
+| 📸 | Instagram | [@crazy.prabin\_18](https://instagram.com/crazy.prabin_18) |
+| 💬 | WhatsApp | [+91 72508 54792](https://wa.me/917250854792) |
 
 </div>
 
 <br/>
 
-<img width="100%" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" />
+<img width="100%" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
 
 <br/>
 
-## ◈ &nbsp;License
+## 📜 &nbsp;License
 
 <br/>
 
-This project is open source under the [MIT License](LICENSE) — use it freely, credit appreciated.
+Open source under the **MIT License** — use freely, credit appreciated.
 
-<br/><br/>
+<br/>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:1a3a6e,50:0f1f3d,100:04080f&height=160&section=footer&text=Made%20with%20%E2%9D%A4%EF%B8%8F%20by%20Prabin%20Yadav%20%C2%B7%20Amrita%20Vishwa%20Vidyapeetham&fontSize=16&fontColor=60a5fa&fontAlignY=55&animation=fadeIn" />
+---
+
+<br/>
 
 <div align="center">
 
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:1a3a6e,40:0f1f3d,70:061428,100:020d1f&height=180&section=footer&text=Made%20with%20%E2%9D%A4%EF%B8%8F%20by%20Prabin%20Yadav&fontSize=22&fontColor=60a5fa&fontAlignY=50&desc=1st%20Year%20CSE%20%C2%B7%20Amrita%20Vishwa%20Vidyapeetham%20%C2%B7%20Chennai&descSize=13&descColor=475569&descAlignY=72&animation=fadeIn" />
+
 <br/>
 
-**If this project impressed you, a ⭐ means a lot!**
+**If this project impressed you — a ⭐ on the repo means the world!**
 
 <br/>
 
