@@ -1,83 +1,107 @@
-<img width="100%" src="https://capsule-render.vercel.app/api?type=venom&color=0:000000,20:020b18,40:041628,60:051d36,80:062244,100:082952&height=400&section=header&text=PRABIN%20YADAV&fontSize=100&fontColor=38bdf8&fontAlignY=38&desc=Student%20Developer%20%E2%80%94%20Building%20Modern%20Web%20Experiences&descAlignY=60&descSize=20&descColor=7dd3fc&animation=twinkling&stroke=0ea5e9&strokeWidth=2"/>
+<!-- ANIMATED HEADER -->
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,30:302b63,60:24243e,100:0f0c29&height=350&section=header&text=PRABIN%20YADAV&fontSize=90&fontColor=c084fc&fontAlignY=40&desc=Student%20Developer%20%7C%20HTML%20%C2%B7%20CSS%20%C2%B7%20Vanilla%20JS%20%C2%B7%20Firebase&descAlignY=62&descSize=18&descColor=a78bfa&animation=twinkling&stroke=7c3aed&strokeWidth=2"/>
 
+<!-- BADGES -->
 <div align="center">
 
 <br/>
 
-<a href="https://prabinyadav.dev"><img src="https://img.shields.io/badge/%E2%97%89%20LIVE%20SITE-prabinyadav.dev-38bdf8?style=for-the-badge&labelColor=020b18&color=38bdf8" alt="Live"/></a>
-&ensp;
-<a href="https://github.com/hell-codes"><img src="https://img.shields.io/badge/GITHUB-hell--codes-7dd3fc?style=for-the-badge&logo=github&logoColor=38bdf8&labelColor=020b18" alt="GitHub"/></a>
-&ensp;
-<a href="https://linkedin.com/in/prabinyadav"><img src="https://img.shields.io/badge/LINKEDIN-prabinyadav-bae6fd?style=for-the-badge&logo=linkedin&logoColor=38bdf8&labelColor=020b18" alt="LinkedIn"/></a>
+<a href="https://prabinyadav.dev">
+<img src="https://img.shields.io/badge/%E2%97%89%20LIVE-prabinyadav.dev-c084fc?style=for-the-badge&labelColor=0f0c29&color=c084fc"/>
+</a>
+<a href="https://github.com/hell-codes">
+<img src="https://img.shields.io/badge/GITHUB-hell--codes-a78bfa?style=for-the-badge&logo=github&logoColor=c084fc&labelColor=0f0c29"/>
+</a>
+<a href="https://linkedin.com/in/prabinyadav">
+<img src="https://img.shields.io/badge/LINKEDIN-prabinyadav-818cf8?style=for-the-badge&logo=linkedin&logoColor=c084fc&labelColor=0f0c29"/>
+</a>
 
 <br/><br/>
 
-<a href="https://visitorbadge.io/status?path=hell-codes%2Fprabinyadav-portfolio"><img src="https://api.visitorbadge.io/api/visitors?path=hell-codes%2Fprabinyadav-portfolio&label=PROFILE+VIEWS&labelColor=%23020b18&countColor=%2338bdf8&style=for-the-badge"/></a>
-&ensp;
-<a href="https://github.com/hell-codes"><img src="https://img.shields.io/github/followers/hell-codes?style=for-the-badge&color=7dd3fc&labelColor=020b18&logo=github&logoColor=38bdf8&label=FOLLOWERS"/></a>
+<a href="https://visitorbadge.io/status?path=hell-codes%2Fprabinyadav-portfolio">
+<img src="https://api.visitorbadge.io/api/visitors?path=hell-codes%2Fprabinyadav-portfolio&label=VISITORS&labelColor=%230f0c29&countColor=%23c084fc&style=for-the-badge"/>
+</a>
+<a href="https://github.com/hell-codes">
+<img src="https://img.shields.io/github/followers/hell-codes?style=for-the-badge&color=a78bfa&labelColor=0f0c29&logo=github&logoColor=c084fc&label=FOLLOWERS"/>
+</a>
 
 <br/><br/>
 
-<a href="https://prabinyadav.dev"><img src="https://readme-typing-svg.demolab.com?font=Outfit&weight=700&size=18&duration=2600&pause=1000&color=38BDF8&center=true&vCenter=true&width=760&lines=No+frameworks.+No+build+step.+No+compromises.;7+unique+canvas+animations+—+one+on+every+single+page.;Firebase+Firestore+%2B+Auth+%2B+live+admin+dashboard.;Built+entirely+from+scratch+by+a+1st+year+CSE+student.+%F0%9F%9A%80"/></a>
+<!-- ANIMATED TYPING -->
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=16&duration=2800&pause=1000&color=C084FC&center=true&vCenter=true&multiline=false&width=750&lines=No+frameworks.+No+build+step.+No+compromises.;7+unique+canvas+animations+%E2%80%94+one+on+every+single+page.;Firebase+Firestore+%2B+Auth+%2B+live+admin+dashboard.;Built+entirely+from+scratch+by+a+1st+year+CSE+student.+%F0%9F%9A%80"/>
+
+<br/><br/>
+
+<!-- ANIMATED SNAKE CONTRIBUTION GRAPH -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hell-codes/hell-codes/output/github-snake-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hell-codes/hell-codes/output/github-snake.svg"/>
+  <img alt="GitHub Snake" src="https://raw.githubusercontent.com/hell-codes/hell-codes/output/github-snake-dark.svg" width="100%"/>
+</picture>
 
 </div>
 
+<!-- PREVIEW IMAGE -->
 <br/>
 
 <div align="center">
 <a href="https://prabinyadav.dev">
-<img width="90%" src="images/portfolio.png" alt="prabinyadav.dev"/>
+<img width="92%" src="images/portfolio.png" alt="prabinyadav.dev — Live Preview"/>
 </a>
 <br/>
-<sub><b><a href="https://prabinyadav.dev">↗ &nbsp;prabinyadav.dev &nbsp;— click to visit live</a></b></sub>
+<sup><i>↑ &nbsp;Click to visit <b>prabinyadav.dev</b></i></sup>
 </div>
 
 <br/>
 
+<!-- QUOTE BOX -->
 <div align="center">
 
 ```
-  ╭──────────────────────────────────────────────────────────────────────────╮
-  │                                                                          │
-  │   " A developer portfolio that feels like a product —                   │
-  │     not assembled from a free template. "                               │
-  │                                                                          │
-  │   Dark luxury aesthetic  ·  Cloud backend  ·  Zero dependencies         │
-  │                                                                          │
-  ╰──────────────────────────────────────────────────────────────────────────╯
+╭─────────────────────────────────────────────────────────────────────────────╮
+│                                                                             │
+│   " A developer portfolio that feels like a product — not a template "     │
+│                                                                             │
+│     Dark luxury aesthetic  ·  Real cloud backend  ·  Zero dependencies     │
+│                                                                             │
+╰─────────────────────────────────────────────────────────────────────────────╯
 ```
 
 </div>
 
-<br/>
-
+<!-- DIVIDER -->
 <img width="100%" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
 
 <br/>
 
-## ✦ &nbsp;At a Glance
+<!-- GLANCE STATS -->
+<div align="center">
+
+## 🔷 &nbsp;At a Glance
 
 <br/>
 
-<div align="center">
-
 <table>
 <tr>
-<td align="center" width="180">
-<img src="https://img.shields.io/badge/PAGES-6%20Public-38bdf8?style=flat-square&labelColor=020b18"/><br/>
-<sub>+ Admin Panel</sub>
+<td align="center">
+<img src="https://img.shields.io/badge/PAGES-6%20Public-c084fc?style=flat-square&labelColor=0f0c29"/>
+<br/><sub>+ Admin Panel</sub>
 </td>
-<td align="center" width="180">
-<img src="https://img.shields.io/badge/CANVAS-7%20Scenes-7dd3fc?style=flat-square&labelColor=020b18"/><br/>
-<sub>One per page, unique</sub>
+<td align="center">
+<img src="https://img.shields.io/badge/CANVAS-7%20Scenes-a78bfa?style=flat-square&labelColor=0f0c29"/>
+<br/><sub>One per page, unique</sub>
 </td>
-<td align="center" width="180">
-<img src="https://img.shields.io/badge/DEPENDENCIES-Zero-bae6fd?style=flat-square&labelColor=020b18"/><br/>
-<sub>Pure browser APIs</sub>
+<td align="center">
+<img src="https://img.shields.io/badge/DEPENDENCIES-Zero-818cf8?style=flat-square&labelColor=0f0c29"/>
+<br/><sub>Pure browser APIs</sub>
 </td>
-<td align="center" width="180">
-<img src="https://img.shields.io/badge/BACKEND-Firebase-38bdf8?style=flat-square&labelColor=020b18"/><br/>
-<sub>Firestore + Auth</sub>
+<td align="center">
+<img src="https://img.shields.io/badge/BACKEND-Firebase-c084fc?style=flat-square&labelColor=0f0c29"/>
+<br/><sub>Firestore + Auth</sub>
+</td>
+<td align="center">
+<img src="https://img.shields.io/badge/DEPLOY-Live-a78bfa?style=flat-square&labelColor=0f0c29"/>
+<br/><sub>prabinyadav.dev</sub>
 </td>
 </tr>
 </table>
@@ -90,7 +114,7 @@
 
 <br/>
 
-## ✦ &nbsp;What Makes This Different
+## 🔷 &nbsp;Why This Portfolio Stands Out
 
 <br/>
 
@@ -100,18 +124,18 @@
 
 ### 🎨 &nbsp;Designed with Intention
 
-Every page has its own **unique animated Canvas background** — particles, waves, hexagons, orbs, falling lines, rising dots. None share a scene. The custom cursor, scroll progress bar, magnetic hover effects, animated skill bars — every interaction handcrafted in pure Vanilla JS.
+Every page has its own **unique animated Canvas background** — particles, waves, hexagons, orbs, falling lines, rising dots. None share a scene. Custom cursor, scroll progress bar, magnetic hover effects, animated skill bars — every detail handcrafted in pure Vanilla JS.
 
-> **Not a single line borrowed from Bootstrap, Tailwind, or any UI library.**
+> Not a single line from Bootstrap, Tailwind, or any UI library.
 
 </td>
 <td width="50%" valign="top">
 
-### ⚙️ &nbsp;Engineered with Precision
+### ⚙️ &nbsp;Engineered with Care
 
-**Firebase Firestore** as a live cloud backend — projects added from the admin dashboard appear for every visitor worldwide, instantly. Images auto-compress via Canvas API. `IntersectionObserver` powers all scroll animations. `overflow-x: clip` keeps sticky navbar working on every page.
+**Firebase Firestore** as live cloud backend — projects from the admin dashboard appear for every visitor worldwide, instantly. Images auto-compress via Canvas API. `IntersectionObserver` powers all animations. `overflow-x: clip` fixes sticky navbar. Zero packages. Zero build tools.
 
-> **`open index.html` → runs. No npm install. No webpack. No setup.**
+> `open index.html` → it just works. No npm, no webpack.
 
 </td>
 </tr>
@@ -123,28 +147,27 @@ Every page has its own **unique animated Canvas background** — particles, wave
 
 <br/>
 
-## ✦ &nbsp;Full Feature List
+## 🔷 &nbsp;Features
 
 <br/>
 
 <div align="center">
 
-| &nbsp; | Feature | What It Does |
-|:------:|:--------|:-------------|
-| 🖱️ | **Custom Cursor** | Dot + lagging ring · Expands on hover · Auto-hidden on touch via `(hover:none)` |
-| 📊 | **Scroll Progress Bar** | Gradient line at page top · Fills live as you read down |
-| 🌊 | **Canvas Backgrounds** | 7 unique hand-coded animated scenes — one per page, never repeated |
-| 👁️ | **Scroll Reveal** | `IntersectionObserver` — every element fades in only when it enters the viewport |
-| ⌨️ | **Typing Animation** | 4 developer roles cycling with natural character-by-character erase + retype |
-| 📈 | **Animated Skill Bars** | Fill to exact percentage only after being scrolled into view |
-| 🌙 | **Dark / Light Mode** | One toggle · Preference saved to `localStorage` · Persists across all pages |
-| 📱 | **Fully Responsive** | Hamburger menu · Slide-in nav · `clamp()` typography · Zero Bootstrap |
+| &nbsp; | Feature | Description |
+|:------:|:--------|:-----------|
+| 🖱️ | **Custom Cursor** | Dot + lagging ring · Expands on hover · Hidden on touch via `(hover:none)` |
+| 📊 | **Scroll Progress** | Gradient bar at page top · Fills live as you read |
+| 🌊 | **Canvas Backgrounds** | 7 unique 2D scenes — hand-coded, one per page, zero repeats |
+| 👁️ | **Scroll Reveal** | `IntersectionObserver` — every element animates on viewport entry |
+| ⌨️ | **Typing Animation** | 4 roles cycling with natural erase and retype rhythm |
+| 📈 | **Animated Skill Bars** | Fill to exact % only after scrolled into view |
+| 🌙 | **Dark / Light Mode** | Toggle · Saved to `localStorage` · Persists across all pages |
+| 📱 | **Fully Responsive** | Hamburger · `clamp()` type · CSS Grid · No Bootstrap |
 | 🔐 | **Admin Dashboard** | Firebase Auth protected · Add and delete projects live |
-| ☁️ | **Cloud Database** | Firebase Firestore · Real-time · Same data for all visitors worldwide |
-| 🖼️ | **Image Compression** | Canvas → JPEG auto-compress before Firestore upload |
-| 📬 | **Contact Form** | Opens Gmail compose pre-filled with visitor message · No backend |
-| 📌 | **Active Nav Links** | Current page highlighted automatically via `pathname` detection |
-| ⚡ | **Zero Dependencies** | No React · No Vue · No Tailwind · No webpack · Pure browser APIs |
+| ☁️ | **Cloud Database** | Firestore · Real-time · All visitors see the same data |
+| 🖼️ | **Image Compression** | Canvas → JPEG pipeline before Firestore upload |
+| 📬 | **Contact Form** | Gmail compose pre-filled · No backend needed |
+| ⚡ | **Zero Dependencies** | No React · No Tailwind · No webpack · Pure browser |
 
 </div>
 
@@ -154,7 +177,7 @@ Every page has its own **unique animated Canvas background** — particles, wave
 
 <br/>
 
-## ✦ &nbsp;Canvas Animations — One Per Page
+## 🔷 &nbsp;Canvas Animations — One Per Page
 
 <br/>
 
@@ -162,13 +185,13 @@ Every page has its own **unique animated Canvas background** — particles, wave
 
 | Page | Scene | Algorithm |
 |:----:|:-----:|:---------|
-| `index.html` | 🔵 **Particle Network** | 90 dots with velocity vectors · Lines fade with distance · Vanish past 130px |
-| `about.html` | 🌊 **Dual Sine Waves** | Two layered waves at different frequencies · Fill to canvas bottom |
-| `projects.html` | ⬡ **Hex Grid Pulse** | Trig-drawn hexagons · Brightness pulses outward from center like sonar |
-| `services.html` | 🟢 **Glowing Orbs** | 18 radial-gradient blobs · Random hue · Drift and bounce off edges |
-| `resume.html` | 🟣 **Falling Lines** | 35 horizontal streaks at randomised speeds · Loop endlessly from top |
-| `contact.html` | 🟡 **Rising Dots** | 65 particles floating upward · Reset at bottom · Loop endlessly |
-| `admin/` | 💠 **Bioluminescent** | Ripples · Drifting spores · Caustic floor light · Deep ocean aesthetic |
+| `index.html` | 🔵 **Particle Network** | 90 dots · velocity vectors · lines fade with distance · vanish past 130px |
+| `about.html` | 🌊 **Dual Sine Waves** | Two layers at different frequencies · fill to canvas bottom |
+| `projects.html` | ⬡ **Hex Grid Pulse** | Trig hexagons · brightness pulses outward like sonar |
+| `services.html` | 🟢 **Glowing Orbs** | 18 radial-gradient blobs · drift and bounce off edges |
+| `resume.html` | 🟣 **Falling Lines** | 35 horizontal streaks at random speeds · loop from top |
+| `contact.html` | 🟡 **Rising Dots** | 65 particles floating upward · reset at bottom endlessly |
+| `admin/` | 💠 **Bioluminescent** | Ripples + spores + caustic floor light · deep ocean |
 
 </div>
 
@@ -178,7 +201,7 @@ Every page has its own **unique animated Canvas background** — particles, wave
 
 <br/>
 
-## ✦ &nbsp;Project Structure
+## 🔷 &nbsp;Project Structure
 
 <br/>
 
@@ -187,43 +210,34 @@ Every page has its own **unique animated Canvas background** — particles, wave
 │
 ├── 📂 admin/                          ← 🔐 Firebase-protected panel
 │   ├── 📂 assets/
-│   │   ├── bg.js                      ← Bioluminescent canvas animation
-│   │   ├── bg-image.png               ← Fallback background
-│   │   └── logo.png                   ← Admin panel logo
-│   ├── login.html                     ← Firebase email + password auth
-│   ├── dashboard.html                 ← Add · delete projects live
-│   ├── admin.js                       ← Firestore CRUD operations
-│   └── admin.css                      ← Admin-specific design system
+│   │   ├── bg.js                      ← Bioluminescent canvas
+│   │   ├── bg-image.png
+│   │   └── logo.png
+│   ├── login.html                     ← Firebase auth
+│   ├── dashboard.html                 ← Add · delete projects
+│   ├── admin.js                       ← Firestore CRUD
+│   └── admin.css
 │
 ├── 📂 css/
 │   └── style.css                      ← 🎨 Master design system
-│                                         CSS variables · Grid · Flexbox
-│                                         Animations · Responsive breakpoints
 │
 ├── 📂 js/
-│   ├── nav.js                         ← 🌐 Shared across ALL 6 pages
-│   │                                     Custom cursor · Scroll progress
-│   │                                     Sticky header · Active nav links
-│   │                                     Dark/light mode · Mobile menu
-│   │                                     Scroll reveal · Skill bars · Resize helper
-│   │
-│   ├── script.js                      ← Home: typing + particles + Firestore fetch
-│   ├── about.js                       ← Dual sine wave canvas
-│   ├── projects.js                    ← Hex grid + all Firestore project cards
-│   ├── services.js                    ← Glowing orbs canvas
-│   ├── resume.js                      ← Falling lines canvas
-│   └── contact.js                     ← Rising dots + Gmail form handler
+│   ├── nav.js                         ← 🌐 Shared — all pages
+│   │                                     cursor · progress · sticky
+│   │                                     theme · menu · reveal · skills
+│   ├── script.js                      ← Home: typing + particles
+│   ├── about.js                       ← Wave canvas
+│   ├── projects.js                    ← Hex grid + Firestore cards
+│   ├── services.js                    ← Orb canvas
+│   ├── resume.js                      ← Falling lines
+│   └── contact.js                     ← Rising dots + Gmail form
 │
-├── 📂 images/                         ← logo · profile · project thumbnails
-├── 📂 certificates/                   ← android · ibm · java · python PDFs
+├── 📂 images/                         ← logo · profile · thumbnails
+├── 📂 certificates/                   ← PDF certificates
 │
-├── index.html                         ← Home
-├── about.html                         ← About
-├── projects.html                      ← Projects
-├── services.html                      ← Services
-├── resume.html                        ← Resume + certificates
-├── contact.html                       ← Contact + social links
-├── resume.pdf                         ← Downloadable CV
+├── index.html    about.html    projects.html
+├── services.html resume.html   contact.html
+├── resume.pdf
 └── README.md
 ```
 
@@ -233,7 +247,7 @@ Every page has its own **unique animated Canvas background** — particles, wave
 
 <br/>
 
-## ✦ &nbsp;Tech Stack
+## 🔷 &nbsp;Tech Stack
 
 <br/>
 
@@ -245,14 +259,14 @@ Every page has its own **unique animated Canvas background** — particles, wave
 
 | Technology | Role |
 |:----------:|:-----|
-| **HTML5** | Semantic structure — 6 public pages + admin panel |
-| **CSS3** | Custom properties · Flexbox · Grid · `@keyframes` · `clamp()` · `backdrop-filter` |
-| **Vanilla JS ES6+** | All logic · Canvas API · DOM · Firestore SDK · `IntersectionObserver` |
-| **Firebase Firestore** | Cloud NoSQL — real-time project storage visible to all visitors |
-| **Firebase Auth** | Email + password protecting the admin panel |
-| **Canvas 2D API** | All 7 animated backgrounds — pure 2D, zero WebGL |
-| **Google Fonts** | Unbounded (display) · Plus Jakarta Sans (body) |
-| **Font Awesome 6** | Social links and UI icons |
+| **HTML5** | Semantic structure — 6 public pages + admin |
+| **CSS3** | Custom properties · Flexbox · Grid · `@keyframes` · `clamp()` |
+| **Vanilla JS ES6+** | Canvas API · DOM · Firestore SDK · `IntersectionObserver` |
+| **Firebase Firestore** | Cloud NoSQL — real-time project storage |
+| **Firebase Auth** | Email + password admin protection |
+| **Canvas 2D API** | All 7 animated backgrounds — zero WebGL |
+| **Google Fonts** | Unbounded · Plus Jakarta Sans |
+| **Font Awesome 6** | Icons |
 
 </div>
 
@@ -262,7 +276,7 @@ Every page has its own **unique animated Canvas background** — particles, wave
 
 <br/>
 
-## ✦ &nbsp;Design System
+## 🔷 &nbsp;Design System
 
 <br/>
 
@@ -270,16 +284,14 @@ Every page has its own **unique animated Canvas background** — particles, wave
 
 | Token | Value | Role |
 |:-----:|:-----:|:-----|
-| `--bg` | `#04080f` | Deep space black — page background |
-| `--accent` | `#60a5fa` | Electric blue — primary highlight |
+| `--bg` | `#04080f` | Deep space black |
+| `--accent` | `#60a5fa` | Electric blue — primary |
 | `--accent-2` | `#34d399` | Emerald green — secondary |
-| `--accent-3` | `#f472b6` | Pink — tertiary accent |
+| `--accent-3` | `#f472b6` | Pink — tertiary |
 | `--text` | `#f1f5f9` | Near-white — primary text |
 | `--text-2` | `#94a3b8` | Slate — secondary text |
-| `--font-display` | `Unbounded` | All headings · nav links · labels |
-| `--font-body` | `Plus Jakarta Sans` | All paragraph text |
-| `--radius` | `14px` | Cards · inputs · buttons |
-| `--radius-lg` | `22px` | Sections · panels |
+| `--font-display` | `Unbounded` | Headings · labels · nav |
+| `--font-body` | `Plus Jakarta Sans` | Body text |
 
 </div>
 
@@ -289,61 +301,32 @@ Every page has its own **unique animated Canvas background** — particles, wave
 
 <br/>
 
-## ✦ &nbsp;Responsive Design
-
-<br/>
-
-<div align="center">
-
-| Breakpoint | Layout |
-|:----------:|:-------|
-| `> 768px` | Full pill navbar · Two-column hero · Multi-column project grid |
-| `≤ 768px` | Hamburger menu · Slide-in nav panel · Single column |
-| `≤ 480px` | Compact hero · Single-column cards · Smaller clamped type |
-
-</div>
-
-<br/>
-
-**Built without Bootstrap or Tailwind — every line written with purpose:**
-
-- **`overflow-x: clip`** instead of `hidden` — `hidden` silently breaks `position: sticky` by creating a new scroll container. `clip` fixes this
-- **CSS Grid `auto-fill`** — cards reflow automatically with no breakpoint needed
-- **`clamp()` typography** — font sizes scale fluidly between min and max, zero sudden jumps
-- **`IntersectionObserver`** — scroll animations fire without touching the scroll event
-- **`(hover: none)` media query** — cursor creation skipped entirely on touch devices
-
-<br/>
-
-<img width="100%" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
-
-<br/>
-
-## ✦ &nbsp;Getting Started
+## 🔷 &nbsp;Getting Started
 
 <br/>
 
 ```bash
-# 1 — Clone
+# Clone
 git clone https://github.com/hell-codes/prabinyadav-portfolio.git
 cd prabinyadav-portfolio
 
-# 2 — Drop in your assets
-#     images/logo.png      images/profile.jpg
-#     resume.pdf           certificates/
+# Add your assets
+# images/logo.png · images/profile.jpg · resume.pdf · certificates/
 
-# 3 — Open — no build step needed
+# Open — zero build step
 open index.html
 ```
 
+<br/>
+
 <div align="center">
 
-| Platform | How to Deploy |
-|:--------:|:-------------|
-| **GitHub Pages** | Settings → Pages → Deploy from `main` branch |
-| **Netlify** | Drag folder to [app.netlify.com/drop](https://app.netlify.com/drop) |
+| Platform | Steps |
+|:--------:|:------|
+| **GitHub Pages** | Settings → Pages → `main` branch |
+| **Netlify** | Drag to [app.netlify.com/drop](https://app.netlify.com/drop) |
 | **Vercel** | `npx vercel --prod` |
-| **Firebase Hosting** | `firebase init hosting` → `firebase deploy` |
+| **Firebase** | `firebase init hosting && firebase deploy` |
 
 </div>
 
@@ -353,21 +336,14 @@ open index.html
 
 <br/>
 
-## ✦ &nbsp;Admin Panel
+## 🔷 &nbsp;Admin Panel
 
 <br/>
 
-> 🔐 &nbsp;`/admin/login.html` — Protected by Firebase Authentication
+> 🔐 &nbsp;`/admin/login.html` — Firebase Auth protected. Unauthorized visitors auto-redirect.
 
 <details>
-<summary><b>&nbsp;▸ &nbsp;Expand — Dashboard guide + Firebase setup</b></summary>
-
-<br/>
-
-| Action | Result |
-|:-------|:-------|
-| ➕ Add project | Title + description + image → compressed → Firestore → live instantly |
-| 🗑️ Delete project | Removed from Firestore → gone from site for all visitors |
+<summary><b>&nbsp;▸ &nbsp;Expand — Firebase setup guide</b></summary>
 
 <br/>
 
@@ -400,23 +376,23 @@ service cloud.firestore {
 
 <br/>
 
-## ✦ &nbsp;GitHub Stats
+## 🔷 &nbsp;GitHub Stats
 
 <br/>
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=hell-codes&show_icons=true&count_private=true&bg_color=020b18&title_color=38bdf8&icon_color=7dd3fc&text_color=bae6fd&border_color=082952&ring_color=38bdf8&hide_border=false&include_all_commits=true" height="180"/>
+<img src="https://github-readme-stats.vercel.app/api?username=hell-codes&show_icons=true&count_private=true&bg_color=0f0c29&title_color=c084fc&icon_color=a78bfa&text_color=818cf8&border_color=302b63&ring_color=c084fc&hide_border=false&include_all_commits=true" height="180"/>
 &nbsp;
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hell-codes&layout=compact&bg_color=020b18&title_color=38bdf8&text_color=bae6fd&border_color=082952&hide_border=false&langs_count=6" height="180"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hell-codes&layout=compact&bg_color=0f0c29&title_color=c084fc&text_color=818cf8&border_color=302b63&hide_border=false&langs_count=6" height="180"/>
 
 <br/><br/>
 
-<img src="https://streak-stats.demolab.com?user=hell-codes&theme=transparent&background=020b18&ring=38bdf8&fire=7dd3fc&currStreakLabel=38bdf8&sideLabels=bae6fd&dates=7dd3fc&stroke=082952&currStreakNum=7dd3fc&sideNums=38bdf8" height="180"/>
+<img src="https://streak-stats.demolab.com?user=hell-codes&theme=transparent&background=0f0c29&ring=c084fc&fire=a78bfa&currStreakLabel=c084fc&sideLabels=818cf8&dates=a78bfa&stroke=302b63&currStreakNum=a78bfa&sideNums=c084fc" height="180"/>
 
 <br/><br/>
 
-<img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=hell-codes&bg_color=020b18&color=38bdf8&line=7dd3fc&point=bae6fd&area=true&area_color=38bdf8&hide_border=false&border_color=082952&title_color=38bdf8&custom_title=Prabin%27s%20GitHub%20Contribution%20Graph"/>
+<img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=hell-codes&bg_color=0f0c29&color=c084fc&line=a78bfa&point=818cf8&area=true&area_color=c084fc&hide_border=false&border_color=302b63&title_color=c084fc&custom_title=Prabin%27s%20GitHub%20Contribution%20Graph"/>
 
 </div>
 
@@ -426,7 +402,7 @@ service cloud.firestore {
 
 <br/>
 
-## ✦ &nbsp;Contact
+## 🔷 &nbsp;Contact
 
 <br/>
 
@@ -449,7 +425,7 @@ service cloud.firestore {
 
 <br/>
 
-## ✦ &nbsp;License
+## 🔷 &nbsp;License
 
 Open source under the **[MIT License](LICENSE)** — use freely, credit appreciated.
 
@@ -459,28 +435,23 @@ Open source under the **[MIT License](LICENSE)** — use freely, credit apprecia
 
 <br/>
 
+<!-- ANIMATED FOOTER -->
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:082952,25:062244,50:051d36,75:041628,100:020b18&height=240&section=footer&text=Made%20with%20%E2%9D%A4%EF%B8%8F%20by%20Prabin%20Yadav&fontSize=28&fontColor=38bdf8&fontAlignY=50&desc=1st%20Year%20CSE%20%C2%B7%20Amrita%20Vishwa%20Vidyapeetham%20%C2%B7%20Chennai%20%C2%B7%202025%E2%80%932026&descSize=15&descColor=7dd3fc&descAlignY=72&animation=fadeIn"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:24243e,30:302b63,60:0f0c29,100:000000&height=250&section=footer&text=Made%20with%20%E2%9D%A4%EF%B8%8F%20by%20Prabin%20Yadav&fontSize=30&fontColor=c084fc&fontAlignY=50&desc=1st%20Year%20CSE%20%C2%B7%20Amrita%20Vishwa%20Vidyapeetham%20%C2%B7%20Chennai&descSize=16&descColor=a78bfa&descAlignY=72&animation=fadeIn"/>
 
 <br/>
 
-![HTML](https://img.shields.io/badge/HTML5-38bdf8?style=flat-square&logo=html5&logoColor=020b18&labelColor=020b18)
-&nbsp;
-![CSS](https://img.shields.io/badge/CSS3-7dd3fc?style=flat-square&logo=css3&logoColor=020b18&labelColor=020b18)
-&nbsp;
-![JS](https://img.shields.io/badge/JavaScript-bae6fd?style=flat-square&logo=javascript&logoColor=020b18&labelColor=020b18)
-&nbsp;
-![Firebase](https://img.shields.io/badge/Firebase-38bdf8?style=flat-square&logo=firebase&logoColor=020b18&labelColor=020b18)
-&nbsp;
-![Zero Deps](https://img.shields.io/badge/Dependencies-Zero-7dd3fc?style=flat-square&labelColor=020b18)
-&nbsp;
-![MIT](https://img.shields.io/badge/License-MIT-bae6fd?style=flat-square&labelColor=020b18)
-&nbsp;
-![Student](https://img.shields.io/badge/Student-1st%20Year%20CSE-38bdf8?style=flat-square&labelColor=020b18)
+![HTML](https://img.shields.io/badge/HTML5-c084fc?style=flat-square&logo=html5&logoColor=0f0c29&labelColor=0f0c29)
+![CSS](https://img.shields.io/badge/CSS3-a78bfa?style=flat-square&logo=css3&logoColor=0f0c29&labelColor=0f0c29)
+![JS](https://img.shields.io/badge/JavaScript-818cf8?style=flat-square&logo=javascript&logoColor=0f0c29&labelColor=0f0c29)
+![Firebase](https://img.shields.io/badge/Firebase-c084fc?style=flat-square&logo=firebase&logoColor=0f0c29&labelColor=0f0c29)
+![Zero Deps](https://img.shields.io/badge/Dependencies-Zero-a78bfa?style=flat-square&labelColor=0f0c29)
+![MIT](https://img.shields.io/badge/License-MIT-818cf8?style=flat-square&labelColor=0f0c29)
+![Student](https://img.shields.io/badge/1st%20Year%20CSE-Amrita-c084fc?style=flat-square&labelColor=0f0c29)
 
 <br/><br/>
 
-**⭐ &nbsp;Star this repo if it impressed you — it genuinely means the world to me!**
+**⭐ &nbsp;If this impressed you — star the repo. It means everything!**
 
 </div>
