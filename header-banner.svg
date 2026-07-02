@@ -1,1 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="1200" height="380">
+  <defs>
+    <radialGradient id="orb1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#cc0000" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8b0000" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#b8860b" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#000000"/>
+      <stop offset="25%"  stop-color="#1a0000"/>
+      <stop offset="50%"  stop-color="#3d0000"/>
+      <stop offset="75%"  stop-color="#1a0000"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </linearGradient>
+    <linearGradient id="scanline" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#cc0000" stop-opacity="0"/>
+      <stop offset="30%"  stop-color="#cc0000" stop-opacity="0.7"/>
+      <stop offset="50%"  stop-color="#ffd700" stop-opacity="0.9"/>
+      <stop offset="70%"  stop-color="#cc0000" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#cc0000" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="clip">
+      <rect width="1200" height="380"/>
+    </clipPath>
+  </defs>
 
+  <!-- Background -->
+  <rect width="1200" height="380" fill="url(#bg)"/>
+
+  <!-- Glow orbs -->
+  <ellipse cx="600" cy="190" rx="220" ry="200" fill="url(#orb1)">
+    <animate attributeName="rx" values="220;260;220" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="ry" values="200;240;200" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="4s" repeatCount="indefinite"/>
+  </ellipse>
+  <ellipse cx="340" cy="130" rx="150" ry="130" fill="url(#orb2)">
+    <animate attributeName="rx" values="150;190;150" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;0.8;0.5" dur="6s" repeatCount="indefinite"/>
+  </ellipse>
+  <ellipse cx="860" cy="280" rx="120" ry="100" fill="url(#orb3)">
+    <animate attributeName="rx" values="120;155;120" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.4;0.7;0.4" dur="5s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- TOP WAVES (3 layers, mirrored) -->
+  <g clip-path="url(#clip)">
+    <!-- Top wave 1 - red -->
+    <path fill="#cc0000" fill-opacity="0.45" d="M-600,0 L-600,55 C-420,105 -240,5 -60,55 C120,105 300,5 480,55 C660,105 840,5 1020,55 C1200,105 1380,5 1560,55 C1740,105 1800,75 1800,55 L1800,0 Z">
+      <animateTransform attributeName="transform" type="translate" values="0,0;180,0;0,0" dur="8s" repeatCount="indefinite"/>
+    </path>
+    <!-- Top wave 2 - dark red -->
+    <path fill="#8b0000" fill-opacity="0.32" d="M-600,0 L-600,35 C-360,95 -120,0 120,50 C360,100 600,0 840,45 C1080,90 1320,0 1560,40 C1680,60 1800,30 1800,35 L1800,0 Z">
+      <animateTransform attributeName="transform" type="translate" values="0,0;-200,0;0,0" dur="6s" repeatCount="indefinite"/>
+    </path>
+    <!-- Top wave 3 - gold -->
+    <path fill="#b8860b" fill-opacity="0.2" d="M-600,0 L-600,25 C-300,75 0,0 300,40 C500,65 700,10 900,50 C1100,85 1350,15 1560,35 C1700,48 1800,25 1800,25 L1800,0 Z">
+      <animateTransform attributeName="transform" type="translate" values="0,0;150,0;0,0" dur="10s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- BOTTOM WAVES (3 layers) -->
+  <g clip-path="url(#clip)">
+    <!-- Bottom wave 1 - red -->
+    <path fill="#cc0000" fill-opacity="0.5" d="M-600,380 L-600,310 C-420,260 -240,340 -60,300 C120,260 300,340 480,300 C660,260 840,340 1020,300 C1200,260 1380,335 1560,300 C1740,265 1800,295 1800,310 L1800,380 Z">
+      <animateTransform attributeName="transform" type="translate" values="0,0;180,0;0,0" dur="7s" repeatCount="indefinite"/>
+    </path>
+    <!-- Bottom wave 2 - dark red -->
+    <path fill="#8b0000" fill-opacity="0.36" d="M-600,380 L-600,330 C-360,275 -120,365 120,325 C360,285 600,365 840,325 C1080,285 1320,360 1560,330 C1680,315 1800,340 1800,330 L1800,380 Z">
+      <animateTransform attributeName="transform" type="translate" values="0,0;-210,0;0,0" dur="5s" repeatCount="indefinite"/>
+    </path>
+    <!-- Bottom wave 3 - gold -->
+    <path fill="#b8860b" fill-opacity="0.22" d="M-600,380 L-600,345 C-300,295 0,375 300,345 C500,325 700,365 900,340 C1100,315 1350,360 1560,345 C1700,335 1800,350 1800,345 L1800,380 Z">
+      <animateTransform attributeName="transform" type="translate" values="0,0;130,0;0,0" dur="9s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- MIDDLE ACCENT WAVES (double layer across center) -->
+  <g clip-path="url(#clip)">
+    <path fill="#cc0000" fill-opacity="0.07" d="M-600,190 C-300,140 0,240 300,190 C600,140 900,240 1200,190 C1500,140 1800,190 1800,190 L1800,210 C1500,210 1200,210 900,210 C600,210 300,210 0,210 C-300,210 -600,210 -600,210 Z">
+      <animateTransform attributeName="transform" type="translate" values="0,0;-160,0;0,0" dur="11s" repeatCount="indefinite"/>
+    </path>
+    <path fill="#ffd700" fill-opacity="0.05" d="M-600,195 C-200,155 200,235 600,195 C1000,155 1400,225 1800,195 L1800,205 C1400,205 1000,205 600,205 C200,205 -200,205 -600,205 Z">
+      <animateTransform attributeName="transform" type="translate" values="0,0;200,0;0,0" dur="13s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Corner decorations -->
+  <g stroke="#ffd700" stroke-width="2" fill="none" opacity="0.55">
+    <path d="M15,15 L15,60 M15,15 L60,15"/>
+    <path d="M1185,15 L1185,60 M1185,15 L1140,15"/>
+  </g>
+  <g stroke="#cc0000" stroke-width="2" fill="none" opacity="0.55">
+    <path d="M15,365 L15,320 M15,365 L60,365"/>
+    <path d="M1185,365 L1185,320 M1185,365 L1140,365"/>
+  </g>
+
+  <!-- Scan line -->
+  <rect x="0" y="0" width="1200" height="2" fill="url(#scanline)">
+    <animate attributeName="y" values="-2;382" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.7;0.7;0" keyTimes="0;0.05;0.95;1" dur="4s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Floating particles -->
+  <circle cx="120" cy="320" r="2" fill="#ffd700" opacity="0">
+    <animate attributeName="cy" values="320;20" dur="6s" repeatCount="indefinite" begin="0s"/>
+    <animate attributeName="opacity" values="0;0.8;0.5;0" keyTimes="0;0.1;0.8;1" dur="6s" repeatCount="indefinite" begin="0s"/>
+  </circle>
+  <circle cx="240" cy="340" r="1.5" fill="#cc0000" opacity="0">
+    <animate attributeName="cy" values="340;40" dur="8s" repeatCount="indefinite" begin="1.5s"/>
+    <animate attributeName="opacity" values="0;0.7;0.4;0" keyTimes="0;0.1;0.8;1" dur="8s" repeatCount="indefinite" begin="1.5s"/>
+  </circle>
+  <circle cx="400" cy="350" r="2.5" fill="#ffd700" opacity="0">
+    <animate attributeName="cy" values="350;30" dur="7s" repeatCount="indefinite" begin="0.8s"/>
+    <animate attributeName="opacity" values="0;0.6;0.4;0" keyTimes="0;0.1;0.8;1" dur="7s" repeatCount="indefinite" begin="0.8s"/>
+  </circle>
+  <circle cx="600" cy="360" r="2" fill="#cc0000" opacity="0">
+    <animate attributeName="cy" values="360;50" dur="5.5s" repeatCount="indefinite" begin="2.2s"/>
+    <animate attributeName="opacity" values="0;0.8;0.5;0" keyTimes="0;0.1;0.8;1" dur="5.5s" repeatCount="indefinite" begin="2.2s"/>
+  </circle>
+  <circle cx="780" cy="330" r="1.5" fill="#ffd700" opacity="0">
+    <animate attributeName="cy" values="330;25" dur="9s" repeatCount="indefinite" begin="3s"/>
+    <animate attributeName="opacity" values="0;0.7;0.3;0" keyTimes="0;0.1;0.8;1" dur="9s" repeatCount="indefinite" begin="3s"/>
+  </circle>
+  <circle cx="950" cy="345" r="2" fill="#b8860b" opacity="0">
+    <animate attributeName="cy" values="345;35" dur="6.5s" repeatCount="indefinite" begin="1s"/>
+    <animate attributeName="opacity" values="0;0.6;0.4;0" keyTimes="0;0.1;0.8;1" dur="6.5s" repeatCount="indefinite" begin="1s"/>
+  </circle>
+  <circle cx="1080" cy="355" r="2.5" fill="#ffd700" opacity="0">
+    <animate attributeName="cy" values="355;45" dur="7.5s" repeatCount="indefinite" begin="4s"/>
+    <animate attributeName="opacity" values="0;0.8;0.4;0" keyTimes="0;0.1;0.8;1" dur="7.5s" repeatCount="indefinite" begin="4s"/>
+  </circle>
+  <circle cx="300" cy="310" r="1.5" fill="#cc0000" opacity="0">
+    <animate attributeName="cy" values="310;10" dur="10s" repeatCount="indefinite" begin="2.8s"/>
+    <animate attributeName="opacity" values="0;0.5;0.3;0" keyTimes="0;0.1;0.8;1" dur="10s" repeatCount="indefinite" begin="2.8s"/>
+  </circle>
+  <circle cx="1150" cy="325" r="2" fill="#ffd700" opacity="0">
+    <animate attributeName="cy" values="325;15" dur="8.5s" repeatCount="indefinite" begin="0.4s"/>
+    <animate attributeName="opacity" values="0;0.7;0.4;0" keyTimes="0;0.1;0.8;1" dur="8.5s" repeatCount="indefinite" begin="0.4s"/>
+  </circle>
+
+  <!-- MAIN TEXT: PRABIN YADAV -->
+  <text x="600" y="195"
+    text-anchor="middle"
+    font-family="'Arial Black','Impact',Arial,sans-serif"
+    font-size="100"
+    font-weight="900"
+    letter-spacing="6"
+    fill="#ffd700"
+    stroke="#cc0000"
+    stroke-width="2">
+    PRABIN YADAV
+    <animate attributeName="opacity" values="0.88;1;0.88" dur="3s" repeatCount="indefinite"/>
+  </text>
+  <!-- Text gold shimmer layer -->
+  <text x="600" y="195"
+    text-anchor="middle"
+    font-family="'Arial Black','Impact',Arial,sans-serif"
+    font-size="100"
+    font-weight="900"
+    letter-spacing="6"
+    fill="#fff8dc"
+    opacity="0">
+    PRABIN YADAV
+    <animate attributeName="opacity" values="0;0.18;0" dur="3s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- DESC TEXT -->
+  <text x="600" y="255"
+    text-anchor="middle"
+    font-family="Arial,sans-serif"
+    font-size="18"
+    font-weight="600"
+    letter-spacing="1.5"
+    fill="#ffb700">
+    Student Developer — B.Tech CSE @ Amrita Vishwa Vidyapeetham
+    <animate attributeName="opacity" values="0.85;1;0.85" dur="2s" repeatCount="indefinite"/>
+  </text>
+</svg>
