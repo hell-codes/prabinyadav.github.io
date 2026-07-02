@@ -1,5 +1,5 @@
 <!-- ANIMATED HEADER -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,30:302b63,60:24243e,100:0f0c29&height=350&section=header&text=PRABIN%20YADAV&fontSize=90&fontColor=c084fc&fontAlignY=40&desc=Student%20Developer%20%7C%20HTML%20%C2%B7%20CSS%20%C2%B7%20Vanilla%20JS%20%C2%B7%20Firebase&descAlignY=62&descSize=18&descColor=a78bfa&animation=twinkling&stroke=7c3aed&strokeWidth=2"/>
+<img width="100%" src="header-banner.svg" alt="Prabin Yadav — Student Developer | B.Tech CSE @ Amrita Vishwa Vidyapeetham"/>
 
 <!-- BADGES -->
 <div align="center">
@@ -7,28 +7,28 @@
 <br/>
 
 <a href="https://prabinyadav.dev">
-<img src="https://img.shields.io/badge/%E2%97%89%20LIVE-prabinyadav.dev-c084fc?style=for-the-badge&labelColor=0f0c29&color=c084fc"/>
+<img src="https://img.shields.io/badge/%E2%97%89%20LIVE-prabinyadav.dev-ffd700?style=for-the-badge&labelColor=0d0000&color=ffd700"/>
 </a>
 <a href="https://github.com/hell-codes">
-<img src="https://img.shields.io/badge/GITHUB-hell--codes-a78bfa?style=for-the-badge&logo=github&logoColor=c084fc&labelColor=0f0c29"/>
+<img src="https://img.shields.io/badge/GITHUB-hell--codes-cc0000?style=for-the-badge&logo=github&logoColor=cc0000&labelColor=0d0000"/>
 </a>
 <a href="https://linkedin.com/in/prabinyadav">
-<img src="https://img.shields.io/badge/LINKEDIN-prabinyadav-818cf8?style=for-the-badge&logo=linkedin&logoColor=c084fc&labelColor=0f0c29"/>
+<img src="https://img.shields.io/badge/LINKEDIN-prabinyadav-b8860b?style=for-the-badge&logo=linkedin&logoColor=b8860b&labelColor=0d0000"/>
 </a>
 
 <br/><br/>
 
 <a href="https://visitorbadge.io/status?path=hell-codes%2Fprabinyadav-portfolio">
-<img src="https://api.visitorbadge.io/api/visitors?path=hell-codes%2Fprabinyadav-portfolio&label=VISITORS&labelColor=%230f0c29&countColor=%23c084fc&style=for-the-badge"/>
+<img src="https://api.visitorbadge.io/api/visitors?path=hell-codes%2Fprabinyadav-portfolio&label=VISITORS&labelColor=%230d0000&countColor=%23ffd700&style=for-the-badge"/>
 </a>
 <a href="https://github.com/hell-codes">
-<img src="https://img.shields.io/github/followers/hell-codes?style=for-the-badge&color=a78bfa&labelColor=0f0c29&logo=github&logoColor=c084fc&label=FOLLOWERS"/>
+<img src="https://img.shields.io/github/followers/hell-codes?style=for-the-badge&color=ffd700&labelColor=0d0000&logo=github&logoColor=cc0000&label=FOLLOWERS"/>
 </a>
 
 <br/><br/>
 
 <!-- ANIMATED TYPING -->
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=16&duration=2800&pause=1000&color=C084FC&center=true&vCenter=true&multiline=false&width=750&lines=No+frameworks.+No+build+step.+No+compromises.;7+unique+canvas+animations+%E2%80%94+one+on+every+single+page.;Firebase+Firestore+%2B+Auth+%2B+live+admin+dashboard.;Built+entirely+from+scratch+by+a+1st+year+CSE+student.+%F0%9F%9A%80"/>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=16&duration=2800&pause=1000&color=FFD700&center=true&vCenter=true&multiline=false&width=750&lines=No+frameworks.+No+build+step.+No+compromises.;7+unique+canvas+animations+%E2%80%94+one+on+every+single+page.;Firebase+Firestore+%2B+Auth+%2B+live+admin+dashboard.;Built+entirely+from+scratch+by+a+1st+year+CSE+student.+%F0%9F%9A%80"/>
 
 <br/><br/>
 
@@ -77,30 +77,30 @@
 <!-- GLANCE STATS -->
 <div align="center">
 
-## 🔷 &nbsp;At a Glance
+## 🏏 &nbsp;At a Glance
 
 <br/>
 
 <table>
 <tr>
 <td align="center">
-<img src="https://img.shields.io/badge/PAGES-6%20Public-c084fc?style=flat-square&labelColor=0f0c29"/>
+<img src="https://img.shields.io/badge/PAGES-6%20Public-ffd700?style=flat-square&labelColor=0d0000"/>
 <br/><sub>+ Admin Panel</sub>
 </td>
 <td align="center">
-<img src="https://img.shields.io/badge/CANVAS-7%20Scenes-a78bfa?style=flat-square&labelColor=0f0c29"/>
+<img src="https://img.shields.io/badge/CANVAS-7%20Scenes-cc0000?style=flat-square&labelColor=0d0000"/>
 <br/><sub>One per page, unique</sub>
 </td>
 <td align="center">
-<img src="https://img.shields.io/badge/DEPENDENCIES-Zero-818cf8?style=flat-square&labelColor=0f0c29"/>
+<img src="https://img.shields.io/badge/DEPENDENCIES-Zero-b8860b?style=flat-square&labelColor=0d0000"/>
 <br/><sub>Pure browser APIs</sub>
 </td>
 <td align="center">
-<img src="https://img.shields.io/badge/BACKEND-Firebase-c084fc?style=flat-square&labelColor=0f0c29"/>
+<img src="https://img.shields.io/badge/BACKEND-Firebase-ffd700?style=flat-square&labelColor=0d0000"/>
 <br/><sub>Firestore + Auth</sub>
 </td>
 <td align="center">
-<img src="https://img.shields.io/badge/DEPLOY-Live-a78bfa?style=flat-square&labelColor=0f0c29"/>
+<img src="https://img.shields.io/badge/DEPLOY-Live-cc0000?style=flat-square&labelColor=0d0000"/>
 <br/><sub>prabinyadav.dev</sub>
 </td>
 </tr>
@@ -114,7 +114,7 @@
 
 <br/>
 
-## 🔷 &nbsp;Why This Portfolio Stands Out
+## 🏏 &nbsp;Why This Portfolio Stands Out
 
 <br/>
 
@@ -147,7 +147,7 @@ Every page has its own **unique animated Canvas background** — particles, wave
 
 <br/>
 
-## 🔷 &nbsp;Features
+## 🏏 &nbsp;Features
 
 <br/>
 
@@ -177,7 +177,7 @@ Every page has its own **unique animated Canvas background** — particles, wave
 
 <br/>
 
-## 🔷 &nbsp;Canvas Animations — One Per Page
+## 🏏 &nbsp;Canvas Animations — One Per Page
 
 <br/>
 
@@ -185,12 +185,12 @@ Every page has its own **unique animated Canvas background** — particles, wave
 
 | Page | Scene | Algorithm |
 |:----:|:-----:|:---------|
-| `index.html` | 🔵 **Particle Network** | 90 dots · velocity vectors · lines fade with distance · vanish past 130px |
+| `index.html` | 🔴 **Particle Network** | 90 dots · velocity vectors · lines fade with distance · vanish past 130px |
 | `about.html` | 🌊 **Dual Sine Waves** | Two layers at different frequencies · fill to canvas bottom |
 | `projects.html` | ⬡ **Hex Grid Pulse** | Trig hexagons · brightness pulses outward like sonar |
-| `services.html` | 🟢 **Glowing Orbs** | 18 radial-gradient blobs · drift and bounce off edges |
-| `resume.html` | 🟣 **Falling Lines** | 35 horizontal streaks at random speeds · loop from top |
-| `contact.html` | 🟡 **Rising Dots** | 65 particles floating upward · reset at bottom endlessly |
+| `services.html` | 🟠 **Glowing Orbs** | 18 radial-gradient blobs · drift and bounce off edges |
+| `resume.html` | 🟡 **Falling Lines** | 35 horizontal streaks at random speeds · loop from top |
+| `contact.html` | 🔥 **Rising Dots** | 65 particles floating upward · reset at bottom endlessly |
 | `admin/` | 💠 **Bioluminescent** | Ripples + spores + caustic floor light · deep ocean |
 
 </div>
@@ -201,7 +201,7 @@ Every page has its own **unique animated Canvas background** — particles, wave
 
 <br/>
 
-## 🔷 &nbsp;Project Structure
+## 🏏 &nbsp;Project Structure
 
 <br/>
 
@@ -247,7 +247,7 @@ Every page has its own **unique animated Canvas background** — particles, wave
 
 <br/>
 
-## 🔷 &nbsp;Tech Stack
+## 🏏 &nbsp;Tech Stack
 
 <br/>
 
@@ -276,7 +276,7 @@ Every page has its own **unique animated Canvas background** — particles, wave
 
 <br/>
 
-## 🔷 &nbsp;Design System
+## 🏏 &nbsp;Design System
 
 <br/>
 
@@ -301,7 +301,7 @@ Every page has its own **unique animated Canvas background** — particles, wave
 
 <br/>
 
-## 🔷 &nbsp;Getting Started
+## 🏏 &nbsp;Getting Started
 
 <br/>
 
@@ -336,7 +336,7 @@ open index.html
 
 <br/>
 
-## 🔷 &nbsp;Admin Panel
+## 🏏 &nbsp;Admin Panel
 
 <br/>
 
@@ -376,23 +376,23 @@ service cloud.firestore {
 
 <br/>
 
-## 🔷 &nbsp;GitHub Stats
+## 🏏 &nbsp;GitHub Stats
 
 <br/>
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=hell-codes&show_icons=true&count_private=true&bg_color=0f0c29&title_color=c084fc&icon_color=a78bfa&text_color=818cf8&border_color=302b63&ring_color=c084fc&hide_border=false&include_all_commits=true" height="180"/>
+<img src="https://github-readme-stats.vercel.app/api?username=hell-codes&show_icons=true&count_private=true&bg_color=0d0000&title_color=ffd700&icon_color=cc0000&text_color=ffb700&border_color=8b0000&ring_color=ffd700&hide_border=false&include_all_commits=true" height="180"/>
 &nbsp;
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hell-codes&layout=compact&bg_color=0f0c29&title_color=c084fc&text_color=818cf8&border_color=302b63&hide_border=false&langs_count=6" height="180"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hell-codes&layout=compact&bg_color=0d0000&title_color=ffd700&text_color=ffb700&border_color=8b0000&hide_border=false&langs_count=6" height="180"/>
 
 <br/><br/>
 
-<img src="https://streak-stats.demolab.com?user=hell-codes&theme=transparent&background=0f0c29&ring=c084fc&fire=a78bfa&currStreakLabel=c084fc&sideLabels=818cf8&dates=a78bfa&stroke=302b63&currStreakNum=a78bfa&sideNums=c084fc" height="180"/>
+<img src="https://github-readme-streak-stats.herokuapp.com?user=hell-codes&theme=dark&hide_border=false&background=0d0000&ring=ffd700&fire=cc0000&currStreakLabel=ffd700&sideLabels=ffb700&dates=8b0000&stroke=8b0000&currStreakNum=ffd700&sideNums=cc0000" height="180"/>
 
 <br/><br/>
 
-<img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=hell-codes&bg_color=0f0c29&color=c084fc&line=a78bfa&point=818cf8&area=true&area_color=c084fc&hide_border=false&border_color=302b63&title_color=c084fc&custom_title=Prabin%27s%20GitHub%20Contribution%20Graph"/>
+<img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=hell-codes&bg_color=0d0000&color=ffd700&line=cc0000&point=ffb700&area=true&area_color=8b0000&hide_border=false&border_color=8b0000&title_color=ffd700&custom_title=Prabin%27s%20GitHub%20Contribution%20Graph"/>
 
 </div>
 
@@ -402,7 +402,7 @@ service cloud.firestore {
 
 <br/>
 
-## 🔷 &nbsp;Contact
+## 🏏 &nbsp;Contact
 
 <br/>
 
@@ -425,7 +425,7 @@ service cloud.firestore {
 
 <br/>
 
-## 🔷 &nbsp;License
+## 🏏 &nbsp;License
 
 Open source under the **[MIT License](LICENSE)** — use freely, credit appreciated.
 
@@ -438,17 +438,17 @@ Open source under the **[MIT License](LICENSE)** — use freely, credit apprecia
 <!-- ANIMATED FOOTER -->
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:24243e,30:302b63,60:0f0c29,100:000000&height=250&section=footer&text=Made%20with%20%E2%9D%A4%EF%B8%8F%20by%20Prabin%20Yadav&fontSize=30&fontColor=c084fc&fontAlignY=50&desc=1st%20Year%20CSE%20%C2%B7%20Amrita%20Vishwa%20Vidyapeetham%20%C2%B7%20Chennai&descSize=16&descColor=a78bfa&descAlignY=72&animation=fadeIn"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:ffd700,25:b8860b,55:8b0000,80:1a0000,100:000000&height=250&section=footer&text=Made%20with%20%E2%9D%A4%EF%B8%8F%20by%20Prabin%20Yadav&fontSize=30&fontColor=ffd700&fontAlignY=50&desc=1st%20Year%20CSE%20%C2%B7%20Amrita%20Vishwa%20Vidyapeetham%20%C2%B7%20Chennai&descSize=16&descColor=ffb700&descAlignY=72&animation=fadeIn"/>
 
 <br/>
 
-![HTML](https://img.shields.io/badge/HTML5-c084fc?style=flat-square&logo=html5&logoColor=0f0c29&labelColor=0f0c29)
-![CSS](https://img.shields.io/badge/CSS3-a78bfa?style=flat-square&logo=css3&logoColor=0f0c29&labelColor=0f0c29)
-![JS](https://img.shields.io/badge/JavaScript-818cf8?style=flat-square&logo=javascript&logoColor=0f0c29&labelColor=0f0c29)
-![Firebase](https://img.shields.io/badge/Firebase-c084fc?style=flat-square&logo=firebase&logoColor=0f0c29&labelColor=0f0c29)
-![Zero Deps](https://img.shields.io/badge/Dependencies-Zero-a78bfa?style=flat-square&labelColor=0f0c29)
-![MIT](https://img.shields.io/badge/License-MIT-818cf8?style=flat-square&labelColor=0f0c29)
-![Student](https://img.shields.io/badge/1st%20Year%20CSE-Amrita-c084fc?style=flat-square&labelColor=0f0c29)
+![HTML](https://img.shields.io/badge/HTML5-ffd700?style=flat-square&logo=html5&logoColor=0d0000&labelColor=0d0000)
+![CSS](https://img.shields.io/badge/CSS3-cc0000?style=flat-square&logo=css3&logoColor=0d0000&labelColor=0d0000)
+![JS](https://img.shields.io/badge/JavaScript-b8860b?style=flat-square&logo=javascript&logoColor=0d0000&labelColor=0d0000)
+![Firebase](https://img.shields.io/badge/Firebase-ffd700?style=flat-square&logo=firebase&logoColor=0d0000&labelColor=0d0000)
+![Zero Deps](https://img.shields.io/badge/Dependencies-Zero-cc0000?style=flat-square&labelColor=0d0000)
+![MIT](https://img.shields.io/badge/License-MIT-b8860b?style=flat-square&labelColor=0d0000)
+![Student](https://img.shields.io/badge/1st%20Year%20CSE-Amrita-ffd700?style=flat-square&labelColor=0d0000)
 
 <br/><br/>
 
