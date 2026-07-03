@@ -382,9 +382,9 @@ service cloud.firestore {
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=hell-codes&show_icons=true&count_private=true&bg_color=0d0000&title_color=ffd700&icon_color=cc0000&text_color=ffb700&border_color=8b0000&ring_color=ffd700&hide_border=false&include_all_commits=true" height="180"/>
+<img src="https://github-stats-extended.vercel.app/api?username=hell-codes&show_icons=true&count_private=true&bg_color=0d0000&title_color=ffd700&icon_color=cc0000&text_color=ffb700&border_color=8b0000&ring_color=ffd700&hide_border=false&include_all_commits=true" height="180"/>
 &nbsp;
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hell-codes&layout=compact&bg_color=0d0000&title_color=ffd700&text_color=ffb700&border_color=8b0000&hide_border=false&langs_count=6" height="180"/>
+<img src="https://github-stats-extended.vercel.app/api/top-langs/?username=hell-codes&layout=compact&bg_color=0d0000&title_color=ffd700&text_color=ffb700&border_color=8b0000&hide_border=false&langs_count=6" height="180"/>
 
 <br/><br/>
 
