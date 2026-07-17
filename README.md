@@ -435,10 +435,9 @@ Open source under the **[MIT License](LICENSE)** — use freely, credit apprecia
 
 <br/>
 
-<!-- ANIMATED FOOTER -->
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:ffd700,25:b8860b,55:8b0000,80:1a0000,100:000000&height=250&section=footer&text=Made%20with%20%E2%9D%A4%EF%B8%8F%20by%20Prabin%20Yadav&fontSize=30&fontColor=ffd700&fontAlignY=50&desc=1st%20Year%20CSE%20%C2%B7%20Amrita%20Vishwa%20Vidyapeetham%20%C2%B7%20Chennai&descSize=16&descColor=ffb700&descAlignY=72&animation=fadeIn"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:ffd700,25:b8860b,55:8b0000,80:1a0000,100:000000&height=250&section=footer&text=Made%20with%20%E2%9D%A4%EF%B8%8F%20by%20Prabin%20Yadav&fontSize=30&fontColor=ffd700&fontAlignY=50&desc=2nd%20Year%20CSE%20%C2%B7%20Amrita%20Vishwa%20Vidyapeetham%20%C2%B7%20Chennai&descSize=16&descColor=ffb700&descAlignY=72&animation=fadeIn"/>
 
 <br/>
 
