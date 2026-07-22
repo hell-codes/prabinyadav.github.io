@@ -445,7 +445,7 @@ Open source under the **[MIT License](LICENSE)** — use freely, credit apprecia
 ![Firebase](https://img.shields.io/badge/Firebase-ffd700?style=flat-square&logo=firebase&logoColor=0d0000&labelColor=0d0000)
 ![Zero Deps](https://img.shields.io/badge/Dependencies-Zero-cc0000?style=flat-square&labelColor=0d0000)
 ![MIT](https://img.shields.io/badge/License-MIT-b8860b?style=flat-square&labelColor=0d0000)
-![Student](https://img.shields.io/badge/1st%20Year%20CSE-Amrita-ffd700?style=flat-square&labelColor=0d0000)
+![Student](https://img.shields.io/badge/2nd%20Year%20CSE-Amrita-ffd700?style=flat-square&labelColor=0d0000)
 
 <br/><br/>
 
