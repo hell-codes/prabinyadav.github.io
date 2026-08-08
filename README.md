@@ -1,4 +1,3 @@
-
 <img width="100%" src="header-banner.svg" alt="Prabin Yadav — Student Developer | B.Tech CSE @ Amrita Vishwa Vidyapeetham"/>
 
 <div align="center">
