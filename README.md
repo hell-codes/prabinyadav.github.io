@@ -25,7 +25,6 @@
 
 <br/><br/>
 
-<!-- ANIMATED TYPING -->
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=16&duration=2800&pause=1000&color=FFD700&center=true&vCenter=true&multiline=false&width=750&lines=No+frameworks.+No+build+step.+No+compromises.;7+unique+canvas+animations+%E2%80%94+one+on+every+single+page.;Firebase+Firestore+%2B+Auth+%2B+live+admin+dashboard.;Built+entirely+from+scratch+by+a+2nd+year+CSE+student.+%F0%9F%9A%80"/>
 
 <br/><br/>
